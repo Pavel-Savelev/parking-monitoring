@@ -1,0 +1,131 @@
+
+
+:root {
+  --font-size: 16px;
+  /* Colors */
+  --color-gray:#F5F7F9;
+  --color-accent: #3E7AA3;
+  --color-accent-bright: #253017;
+  --color-icon: black;
+  --color-svg-image: black;
+  --color-text: #0B1117;
+  --color-text-connector: #241C57;
+  --color-text-link: #ABB1BF;
+  --color-text-warning: #ffa500;
+  --color-error: #bf3920;
+  --color-text-disabled: #9CA197;
+
+  /* Background colors */
+  /* --bg-logo: #ABD27A; */
+  --bg-color: #F8F8F8;
+  --bg-color-opacity: #8e8e8e;
+  --bg-item-color: #ffffff;
+  --bg-accent: #3E7AA3;
+
+  /* button */
+  --bg-button: #F5F7F9;
+  --bg-button-active: #3E7AA3;
+  --bg-button-hover: #3E7AA3;
+  --bg-button-focus: #3E7AA3;
+  --bg-button-disabled: #e4e8df;
+
+  /* button-accent" */
+  --bg-button-accent: #3E7AA3;
+  --bg-button-accent-active: #F5F7F9;
+  --bg-button-accent-hover: #F5F7F9;
+  --bg-button-accent-focus: #F5F7F9;
+
+  /* Border colors */
+  --border-accent: #F5F7F9;
+  --border-special: #F5F7F9;
+  --border-disabled: #e4e8df;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
+
+  /* Border radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-2sm: 0.75rem;
+  --space-md: 1rem;
+  --space-2md: 1.25rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-xxl: 2.5rem;
+  --space-2xl: 3rem;
+  --space-3xl: 3.5rem;
+
+  /* font families */
+  --font-family-opensans: 'Open Sans SemiBold', sans-serif;
+  --font-family-jost: 'Jost SemiBold', sans-serif;
+  --font-family-roboto: 'Roboto Regular', sans-serif;
+
+  /* font Weights */
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+
+  /* font size */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 250ms ease-in-out;
+  --transition-slow: 350ms ease-in-out;
+
+  /* buttons size */
+  --button-height: 3rem;
+
+  /* tags-size */
+  --tag-height: 2rem;
+  --tag-width: 8.375rem;
+
+  /* modal-popup */
+  --modal-width: 34.75rem;
+  --modal-height: 26.25rem;
+
+  /* modal-registration */
+  --modal-registration-width: 90rem;
+  --modal-registration-height: 64rem;
+
+  /* modal-inputs */
+  --modal-input: 3rem;
+
+  /* Layout */
+  --header-height: 6.5rem;
+  --footer-height: 14.5rem;
+
+  /* sidebar(tags-menu) */
+  --sidebar-width: 20.25rem;
+
+  /* drop-container */
+  --container-max-width: 71rem;
+  --container-max-height: 65rem;
+}
+
+/* Адаптив для планшетов */
+@media (max-width: 768px) {
+  :root {
+    font-size: 15px;
+  }
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 480px) {
+  :root {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "ST001",
+    "serialNumber": "SN2024-001",
+    "nameStation": "Центральная парковка",
+    "parkingStatus": "Занято",
+    "city": "Москва",
+    "useTime": "2 часа 15 мин"
+  },
+  {
+    "id": "ST002",
+    "serialNumber": "SN2024-002",
+    "nameStation": "Торговый центр 'Глобус'",
+    "parkingStatus": "Свободно",
+    "city": "Москва",
+    "useTime": "0 мин"
+  },
+  {
+    "id": "ST003",
+    "serialNumber": "SN2024-003",
+    "nameStation": "Аэропорт Шереметьево",
+    "parkingStatus": "Частично занято",
+    "city": "Москва",
+    "useTime": "1 час 30 мин"
+  },
+  {
+    "id": "ST004",
+    "serialNumber": "SN2024-004",
+    "nameStation": "Москва-Сити",
+    "parkingStatus": "Занято",
+    "city": "Москва",
+    "useTime": "3 часа 45 мин"
+  },
+  {
+    "id": "ST005",
+    "serialNumber": "SN2024-005",
+    "nameStation": "ВДНХ",
+    "parkingStatus": "Свободно",
+    "city": "Москва",
+    "useTime": "0 мин"
+  },
+  {
+    "id": "ST006",
+    "serialNumber": "SN2024-006",
+    "nameStation": "Центральный вокзал",
+    "parkingStatus": "Занято",
+    "city": "Санкт-Петербург",
+    "useTime": "1 час 20 мин"
+  },
+  {
+    "id": "ST007",
+    "serialNumber": "SN2024-007",
+    "nameStation": "Невский проспект",
+    "parkingStatus": "Частично занято",
+    "city": "Санкт-Петербург",
+    "useTime": "45 мин"
+  },
+  {
+    "id": "ST008",
+    "serialNumber": "SN2024-008",
+    "nameStation": "ТРК 'Питер'",
+    "parkingStatus": "Свободно",
+    "city": "Санкт-Петербург",
+    "useTime": "0 мин"
+  },
+  {
+    "id": "ST009",
+    "serialNumber": "SN2024-009",
+    "nameStation": "Казанский вокзал",
+    "parkingStatus": "Занято",
+    "city": "Казань",
+    "useTime": "4 часа 10 мин"
+  },
+  {
+    "id": "ST010",
+    "serialNumber": "SN2024-010",
+    "nameStation": "Кремлевская набережная",
+    "parkingStatus": "Свободно",
+    "city": "Казань",
+    "useTime": "0 мин"
+  },
+  {
+    "id": "ST011",
+    "serialNumber": "SN2024-011",
+    "nameStation": "Площадь Революции",
+    "parkingStatus": "Частично занято",
+    "city": "Екатеринбург",
+    "useTime": "2 часа 05 мин"
+  },
+  {
+    "id": "ST012",
+    "serialNumber": "SN2024-012",
+    "nameStation": "Высоцкий",
+    "parkingStatus": "Занято",
+    "city": "Екатеринбург",
+    "useTime": "5 часов 20 мин"
+  },
+  {
+    "id": "ST013",
+    "serialNumber": "SN2023-001",
+    "nameStation": "Старая станция",
+    "parkingStatus": "На обслуживании",
+    "city": "Новосибирск",
+    "useTime": "Не доступно"
+  },
+  {
+    "id": "ST014",
+    "serialNumber": "SN2024-014",
+    "nameStation": "Академгородок",
+    "parkingStatus": "Свободно",
+    "city": "Новосибирск",
+    "useTime": "0 мин"
+  },
+  {
+    "id": "ST015",
+    "serialNumber": "SN2024-015",
+    "nameStation": "Олимпийский парк",
+    "parkingStatus": "Занято",
+    "city": "Сочи",
+    "useTime": "6 часов 30 мин"
+  }
+]

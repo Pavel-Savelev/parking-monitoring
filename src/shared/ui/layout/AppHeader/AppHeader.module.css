@@ -1,0 +1,35 @@
+.app_header{
+  width: 100%;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #E2E2E2;
+}
+
+.app_header_container {
+  display: flex;
+  height: 5.6rem;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center; 
+}
+
+.app_nav{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.input{
+  background-color: #F5F7F9;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+.connectors_list {
+  color: black;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.connector {
+  position: relative;
+  background-color: white;
+  height: 9.375rem;
+  width: 15.625rem;
+  padding-top: 5px;
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 10px;
+  color: #241C57;
+}
+
+.connector_image {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.connector_type {
+  position: absolute;
+}
+.connectors_list {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.connector_image {
+  width: 150px; /* Фиксированная ширина */
+  height: 140px; /* Фиксированная высота */
+  object-fit: contain; /* Сохраняет пропорции изображения */
+  flex-shrink: 0; /* Запрещает уменьшение */
+}
+
+.connector_type {
+  font-weight: 600;
+  font-size: 14px;
+  color: #241C57;
+  margin: 0;
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xl);
+}
+
+.connector_status {
+  font-size: 12px;
+  color: #666;
+  padding: 2px 8px;
+  border-radius: 12px;
+  background: #f5f5f5;
+}

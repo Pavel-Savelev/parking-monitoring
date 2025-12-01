@@ -1,0 +1,99 @@
+.item {
+  width: 100%;
+  color: #241c57;
+  background-color: #f5f7f9;
+  font-family: var(--font-family-jost);
+  font-size: var(--font-size-sm);
+  padding: 0 5px;
+  overflow: hidden; 
+}
+
+.main_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 5px;
+  align-items: center;
+}
+
+.event_head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+}
+
+.event_name {
+  color: #241c57;
+}
+
+.date {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.arrow {
+  transition: transform 0.2s ease;
+  background: none;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  color: #3e7aa3;
+}
+
+.arrow_expanded {
+  transform: rotate(180deg);
+}
+
+.details {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  padding: 0 10px;
+}
+
+.details.expanded {
+  max-height: 500px;
+  opacity: 1;
+  padding: 10px;
+}
+
+.detail_row {
+  display: flex;
+  width: 100%;
+  margin-bottom: 8px;
+  justify-content: space-between;
+}
+
+.detail_label {
+  color: #555;
+}
+
+.detail_value {
+  color: #241c57;
+  display: flex;
+}
+
+.goNext {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.details button {
+  padding: 5px 8px;
+  color: white;
+  background-color: #3e7aa3;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.details button:hover {
+  background-color: #2d5a7a;
+}

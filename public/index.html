@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru" class="preload">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parking monitoring</title>
+    <script>
+      // Предотвращение мигания темы при загрузке
+      (function () {
+        try {
+          const stored = localStorage.getItem('skillswap-theme');
+          const theme =
+            stored === 'light' || stored === 'dark' || stored === 'auto'
+              ? stored
+              : 'auto';
+          const isDark = window.matchMedia(
+            '(prefers-color-scheme: dark)'
+          ).matches;
+          const resolvedTheme =
+            theme === 'auto' ? (isDark ? 'dark' : 'light') : theme;
+          document.documentElement.setAttribute('data-theme', resolvedTheme);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

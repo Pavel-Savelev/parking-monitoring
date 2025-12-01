@@ -1,0 +1,135 @@
+.errorPageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+    padding-top: 124px;
+    padding-bottom: 84px;
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+}
+
+.errorContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+.errorImage {
+    width: 460px;
+    height: 304px;
+    object-fit: contain;
+}
+
+.errorTitle {
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-semibold);
+    line-height: 28px;
+    color: var(--color-text);
+    margin-top: var(--space-xl);
+    margin-bottom: 0;
+}
+
+.errorText {
+    font-family: var(--font-family-regular);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-caption);
+    margin-top: var(--space-xs);
+}
+
+.buttonContainer {
+    display: flex;
+    gap: var(--space-lg);
+    margin-top: var(--space-xl);
+}
+
+.primaryButton,
+.outlineButton {
+    height: var(--button-height);
+    padding-left: var(--space-lg);
+    padding-right: var(--space-lg);
+    font-family: var(--font-family-regular);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-regular);
+    cursor: pointer;
+    border-radius: var(--radius-md);
+    transition: background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.primaryButton {
+    background-color: var(--bg-button-accent);
+    color: #ffffff;
+    border: 1px solid var(--bg-button-accent);
+}
+
+.primaryButton:hover {
+    background-color: var(--bg-button-accent-hover);
+    border-color: var(--bg-button-accent-hover);
+}
+
+.primaryButton:active {
+    background-color: var(--bg-button-accent-active);
+    border-color: var(--bg-button-accent-active);
+}
+
+.outlineButton {
+    background-color: transparent;
+    color: var(--color-accent);
+    border: 1px solid var(--border-accent);
+}
+
+.outlineButton:hover {
+    background-color: var(--bg-button-hover);
+}
+
+.outlineButton:active {
+    background-color: var(--bg-button-active);
+}
+
+@media (max-width: 768px) {
+    .errorPageContainer {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+
+    .errorImage {
+        max-width: 460px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .errorPageContainer {
+        padding-top: var(--space-xxl);
+        padding-bottom: var(--space-xxl);
+    }
+
+    .errorTitle {
+        font-size: var(--font-size-xl);
+    }
+
+    .buttonContainer {
+        flex-direction: column;
+        width: 100%;
+        gap: var(--space-md);
+    }
+
+    .primaryButton,
+    .outlineButton {
+        width: 100%;
+    }
+}

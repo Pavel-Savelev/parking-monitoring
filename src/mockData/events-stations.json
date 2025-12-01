@@ -1,0 +1,162 @@
+[
+  {
+    "id": "EV001",
+    "serialNumber": "SN2024-001",
+    "nameStation": "Центральная парковка",
+    "eventName": "Заезд автомобиля",
+    "date": "2024-03-15 09:30:45",
+    "durationEvent": "5 мин"
+  },
+  {
+    "id": "EV002",
+    "serialNumber": "SN2024-001",
+    "nameStation": "Центральная парковка",
+    "eventName": "Выезд автомобиля",
+    "date": "2024-03-15 09:35:20",
+    "durationEvent": "2 мин"
+  },
+  {
+    "id": "EV003",
+    "serialNumber": "SN2024-001",
+    "nameStation": "Центральная парковка",
+    "eventName": "Техническое обслуживание",
+    "date": "2024-03-15 10:00:00",
+    "durationEvent": "30 мин"
+  },
+  {
+    "id": "EV004",
+    "serialNumber": "SN2024-002",
+    "nameStation": "Торговый центр 'Глобус'",
+    "eventName": "Заезд автомобиля",
+    "date": "2024-03-15 11:15:30",
+    "durationEvent": "8 мин"
+  },
+  {
+    "id": "EV005",
+    "serialNumber": "SN2024-002",
+    "nameStation": "Торговый центр 'Глобус'",
+    "eventName": "Ошибка оплаты",
+    "date": "2024-03-15 11:23:45",
+    "durationEvent": "15 мин"
+  },
+  {
+    "id": "EV006",
+    "serialNumber": "SN2024-003",
+    "nameStation": "Аэропорт Шереметьево",
+    "eventName": "Заезд автомобиля",
+    "date": "2024-03-15 08:45:10",
+    "durationEvent": "7 мин"
+  },
+  {
+    "id": "EV007",
+    "serialNumber": "SN2024-003",
+    "nameStation": "Аэропорт Шереметьево",
+    "eventName": "Выезд автомобиля",
+    "date": "2024-03-15 12:30:15",
+    "durationEvent": "3 мин"
+  },
+  {
+    "id": "EV008",
+    "serialNumber": "SN2024-004",
+    "nameStation": "Москва-Сити",
+    "eventName": "Сбой системы",
+    "date": "2024-03-15 14:20:00",
+    "durationEvent": "45 мин"
+  },
+  {
+    "id": "EV009",
+    "serialNumber": "SN2024-005",
+    "nameStation": "ВДНХ",
+    "eventName": "Заезд автомобиля",
+    "date": "2024-03-15 13:10:25",
+    "durationEvent": "6 мин"
+  },
+  {
+    "id": "EV010",
+    "serialNumber": "SN2024-005",
+    "nameStation": "ВДНХ",
+    "eventName": "Выезд автомобиля",
+    "date": "2024-03-15 15:45:30",
+    "durationEvent": "4 мин"
+  },
+  {
+    "id": "EV011",
+    "serialNumber": "SN2024-006",
+    "nameStation": "Центральный вокзал",
+    "eventName": "Плановый осмотр",
+    "date": "2024-03-15 07:00:00",
+    "durationEvent": "1 час 20 мин"
+  },
+  {
+    "id": "EV012",
+    "serialNumber": "SN2024-007",
+    "nameStation": "Невский проспект",
+    "eventName": "Заезд автомобиля",
+    "date": "2024-03-15 16:30:45",
+    "durationEvent": "10 мин"
+  },
+  {
+    "id": "EV013",
+    "serialNumber": "SN2024-008",
+    "nameStation": "ТРК 'Питер'",
+    "eventName": "Обновление ПО",
+    "date": "2024-03-15 03:00:00",
+    "durationEvent": "2 часа 30 мин"
+  },
+  {
+    "id": "EV014",
+    "serialNumber": "SN2024-009",
+    "nameStation": "Казанский вокзал",
+    "eventName": "Заезд автомобиля",
+    "date": "2024-03-15 09:15:20",
+    "durationEvent": "12 мин"
+  },
+  {
+    "id": "EV015",
+    "serialNumber": "SN2024-009",
+    "nameStation": "Казанский вокзал",
+    "eventName": "Выезд автомобиля",
+    "date": "2024-03-15 13:25:40",
+    "durationEvent": "5 мин"
+  },
+  {
+    "id": "EV016",
+    "serialNumber": "SN2024-010",
+    "nameStation": "Кремлевская набережная",
+    "eventName": "Отсутствие связи",
+    "date": "2024-03-15 11:45:00",
+    "durationEvent": "25 мин"
+  },
+  {
+    "id": "EV017",
+    "serialNumber": "SN2024-011",
+    "nameStation": "Площадь Революции",
+    "eventName": "Заезд автомобиля",
+    "date": "2024-03-15 10:30:15",
+    "durationEvent": "9 мин"
+  },
+  {
+    "id": "EV018",
+    "serialNumber": "SN2024-012",
+    "nameStation": "Высоцкий",
+    "eventName": "Выезд автомобиля",
+    "date": "2024-03-15 18:20:30",
+    "durationEvent": "3 мин"
+  },
+  {
+    "id": "EV019",
+    "serialNumber": "SN2023-001",
+    "nameStation": "Старая станция",
+    "eventName": "Ремонтные работы",
+    "date": "2024-03-15 08:00:00",
+    "durationEvent": "4 часа 00 мин"
+  },
+  {
+    "id": "EV020",
+    "serialNumber": "SN2024-014",
+    "nameStation": "Академгородок",
+    "eventName": "Заезд автомобиля",
+    "date": "2024-03-15 17:45:10",
+    "durationEvent": "7 мин"
+  }
+]

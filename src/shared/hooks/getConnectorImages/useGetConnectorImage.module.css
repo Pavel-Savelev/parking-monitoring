@@ -1,0 +1,33 @@
+.connector_image {
+  object-fit: contain;
+}
+
+.connector_gbt {
+  width: 8.75rem;
+  height: 9.5625rem;
+}
+
+.connector_chademo {
+  width: 9.5625rem;
+  height: 10.125rem;
+}
+
+.connector_type2 {
+  width: 13.43rem;
+  height: 9rem;
+}
+
+.connector_ccs {
+  width: 50px;
+  height: 50px;
+}
+
+.connector_type1 {
+  width: 38px;
+  height: 38px;
+}
+
+.connector_default {
+  width: 40px;
+  height: 40px;
+}

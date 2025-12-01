@@ -1,0 +1,10 @@
+/* Главный файл стилей, который импортирует все остальное */
+@import './reset.css';
+@import './themes/index.css';
+@import './globals.css';
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

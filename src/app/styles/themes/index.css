@@ -1,0 +1,32 @@
+/* Этот файл импортирует все темы и управляет их загрузкой */
+@import './variables.css';
+@import './light-theme.css';
+@import './dark-theme.css';
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    /* Используем переменные из dark-theme.css если системная тема - темная */
+    color-scheme: dark;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) {
+    /* Используем переменные из light-theme.css если системная тема - светлая */
+    color-scheme: light;
+  }
+}
+
+/* Принудительные темы через data-attribute */
+:root[data-theme='dark'] {
+  color-scheme: dark;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+}
+
+/* Блокировка transitions при первой загрузке для предотвращения мигания */
+:root.preload * {
+  transition: none !important;
+}
