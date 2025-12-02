@@ -1,6 +1,6 @@
 import styles from './EventList.module.css';
-import { EventItem } from '../EventItem/EventItem';
-import { IEventData } from '../../Station';
+import { EventItem } from '../../../Station/ui/EventItem/EventItem';
+import { IEventData } from '../../../Station/Station';
 
 interface IEventProp {
   data: IEventData[];

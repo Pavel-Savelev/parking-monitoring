@@ -117,7 +117,7 @@ export const StationCard: React.FC = () => {
   const { serialNumber } = useParams();
 
   return (
-    <>
+    <div className={styles.container}>
       <div className={styles.content_camera}>
         <Connectors data={data} />
         <Monitor />
@@ -126,6 +126,6 @@ export const StationCard: React.FC = () => {
       <div className={styles.content_events}>
         <EventList data={eventData} />
       </div>
-    </>
+    </div>
   );
 };

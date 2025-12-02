@@ -1,12 +1,12 @@
 import styles from './StationListUI.module.css';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { IStationData, IFilterName } from '../../type';
+import { IStationData, IItem } from '../../type';
 import { Input } from '../Input';
 
 interface IPageFilterProp {
   data: IStationData[];
-  names: IFilterName[];
+  names: IItem[];
 }
 
 export function StationsListUI({ data, names }: IPageFilterProp) {
@@ -25,7 +25,7 @@ export function StationsListUI({ data, names }: IPageFilterProp) {
     navigate('/station');
   }
 
-  const filterNames: IFilterName[] = [
+  const filterNames: IItem[] = [
     {
       name: 'Серийный номер',
       type: 'text' as const,

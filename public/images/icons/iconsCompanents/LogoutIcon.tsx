@@ -1,12 +1,12 @@
 import React from 'react';
-import { IconLogoutProps } from '../type';
+import { IconProps } from '../type';
 
 function IconLogout({
   className = '',
   width = 24,
   height = 24,
   color = 'currentColor'
-}: IconLogoutProps): JSX.Element {
+}: IconProps): JSX.Element {
   return (
     <svg
       className={className}

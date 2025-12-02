@@ -16,6 +16,52 @@
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
   padding: 0 5px;
+  border-top: 0.5px solid gray;
+  border-bottom: 0.5px solid gray;
+  border-radius: 2px;
+  height: 3.2rem;
+}
+
+.statin_list li:hover{
+  background-color: #3E7AA3;
+  color: white;
+}
+
+.statin_list li span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statin_filters{
+  min-height: 7.5rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-bottom: 10px;
+  background-color: white;
+  border-top: 0.5px solid gray;
+  border-bottom: 0.5px solid gray;
+  border-radius: 3px;
+}
+.statin_list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: black;
+  border-radius: 2px;
+}
+
+.statin_list li {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  cursor: pointer;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  padding: 0 5px;
   border-top: 2.5px solid rgb(239, 239, 239);
   border-bottom: 2.5px solid rgb(239, 239, 239);
   border-radius: 2px;
@@ -27,8 +73,6 @@
   background-color: #3E7AA3;
   color: white;
 }
-
-
 
 .statin_list li span{
   display: flex;

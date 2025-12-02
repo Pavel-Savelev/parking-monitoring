@@ -1,31 +1,32 @@
-import styles from './StationListUI.module.css';
+import styles from './EventsxList.module.css';
 import { useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Input } from '../../../../shared/ui/Input';
-import { IItem, IStationData } from '../../../../shared/type';
+import { IEventData } from '../type';
+import { Input } from '../../../shared/ui/Input';
+import { IItem } from '../../../shared/type';
 
 interface IStationList {
-  data: IStationData[];
+  data: IEventData[];
 }
 
-export function StationsListUI({ data }: IStationList) {
-  const optionsStationStatus = {};
+export function EventsListUI({ data }: IStationList) {
   const [filters, setFilters] = useState({
     id: '',
     stationName: '',
-    stationStatus: '',
+    event: '',
+    date: '',
     serialNumber: '',
-    city: '',
     durationTime: ''
   });
+
   const handleChange = (field: string) => (value: string) => {
     setFilters((prev) => ({ ...prev, [field]: value }));
   };
 
   const navigate = useNavigate();
 
-  function handleNavigate(id: string) {
-    navigate(`/station/${id}`);
+  function handleNavigate(id: string, event_id: string) {
+    navigate(`/station/${id}/${event_id}`);
   }
 
   const filterList: IItem[] = [
@@ -44,17 +45,17 @@ export function StationsListUI({ data }: IStationList) {
       placeholder: 'Введите'
     },
     {
-      name: 'Статус парковки',
+      name: 'Поиск по событию',
       type: 'text' as const,
-      value: filters.stationStatus,
-      onChange: handleChange('stationStatus'),
+      value: filters.event,
+      onChange: handleChange('event'),
       placeholder: 'Введите'
     },
     {
-      name: 'Город',
+      name: 'Поиск по времени',
       type: 'text' as const,
-      value: filters.city,
-      onChange: handleChange('city'),
+      value: filters.date,
+      onChange: handleChange('date'),
       placeholder: 'Введите'
     },
     {
@@ -66,48 +67,54 @@ export function StationsListUI({ data }: IStationList) {
     }
   ];
 
-  // Фильтрация
+  // Фильтрация данных
   const filteredData = useMemo(
     () =>
       data.filter((station) => {
+        // Проверяем каждый фильтр
         const matchesSerialNumber = filters.serialNumber
-          ? station.serialNumber
+          ? String(station.serialNumber || '')
               .toLowerCase()
               .includes(filters.serialNumber.toLowerCase())
           : true;
 
         const matchesStationName = filters.stationName
-          ? station.nameStation
+          ? String(station.nameStation || '')
               .toLowerCase()
               .includes(filters.stationName.toLowerCase())
           : true;
 
-        const matchesStationStatus = filters.stationStatus
-          ? station.parkingStatus
+        const matchesStationEvent = filters.event
+          ? String(station.eventName || '')
               .toLowerCase()
-              .includes(filters.stationStatus.toLowerCase())
+              .includes(filters.event.toLowerCase())
           : true;
 
-        const matchesCity = filters.city
-          ? station.city.toLowerCase().includes(filters.city.toLowerCase())
+        const matchesDate = filters.date
+          ? String(station.date || '')
+              .toLowerCase()
+              .includes(filters.date.toLowerCase())
           : true;
 
+        // Используем правильное поле для фильтрации длительности
         const matchesDurationTime = filters.durationTime
-          ? station.useTime
+          ? String(station.durationEvent || station.durationEvent || '') // Проверяем разные возможные названия поля
               .toLowerCase()
               .includes(filters.durationTime.toLowerCase())
           : true;
 
+        // Возвращаем true только если все активные фильтры совпадают
         return (
           matchesSerialNumber &&
           matchesStationName &&
-          matchesStationStatus &&
-          matchesCity &&
+          matchesStationEvent &&
+          matchesDate &&
           matchesDurationTime
         );
       }),
     [data, filters]
   );
+
   return (
     <div className={styles.stations_statistics}>
       <div className={styles.statin_filters}>
@@ -124,18 +131,25 @@ export function StationsListUI({ data }: IStationList) {
         ))}
       </div>
       <ul className={styles.statin_list}>
-        {filteredData.map((station) => (
-          <li
-            key={station.serialNumber}
-            onClick={() => handleNavigate(station.id)}
-          >
-            <span>{station.serialNumber}</span>
-            <span>{station.nameStation}</span>
-            <span>{station.parkingStatus}</span>
-            <span>{station.city}</span>
-            <span>{station.useTime}</span>
+        {filteredData.length > 0 ? (
+          filteredData.map((station) => (
+            <li
+              key={station.id}
+              onClick={() => handleNavigate(station.id, station.event_id)}
+            >
+              <span>{station.serialNumber}</span>
+              <span>{station.nameStation}</span>
+              <span>{station.eventName}</span>
+              <span>{station.date}</span>
+              <span>{station.durationEvent}</span>
+              {/* Исправлено: отображаем длительность */}
+            </li>
+          ))
+        ) : (
+          <li className={styles.no_results}>
+            Нет данных, соответствующих фильтрам
           </li>
-        ))}
+        )}
       </ul>
     </div>
   );

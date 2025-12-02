@@ -5,4 +5,5 @@ export interface IEventData {
   eventName:string
   date:string
   durationEvent:string
+  event_id:string
 }

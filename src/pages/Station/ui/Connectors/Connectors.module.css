@@ -11,7 +11,7 @@
   position: relative;
   background-color: white;
   height: 9.375rem;
-  width: 15.625rem;
+  width: 30%;
   padding-top: 5px;
   padding-left: 25px;
   display: flex;
@@ -37,10 +37,10 @@
 }
 
 .connector_image {
-  width: 150px; /* Фиксированная ширина */
-  height: 140px; /* Фиксированная высота */
-  object-fit: contain; /* Сохраняет пропорции изображения */
-  flex-shrink: 0; /* Запрещает уменьшение */
+  width: 150px;
+  height: 140px;
+  object-fit: contain;
+  flex-shrink: 0; 
 }
 
 .connector_type {

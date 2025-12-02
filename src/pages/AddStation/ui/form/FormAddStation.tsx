@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './FormAddStation.module.css';
 
 interface IFormStation {
@@ -19,6 +19,8 @@ export function FormAddStation() {
     photo: '',
     address: ''
   });
+
+  let buttonDisabled;
 
   const [selectedFileName, setSelectedFileName] = useState('');
 
@@ -48,14 +50,21 @@ export function FormAddStation() {
     // Здесь будет логика сохранения
   };
 
+  const isFormValid = () =>
+    formData.serialNumber.trim() !== '' &&
+    formData.nameStation.trim() !== '' &&
+    formData.address.trim() !== '' &&
+    formData.ip.trim() !== '';
+
   // Очистка blob URL при размонтировании компонента
-  React.useEffect(() => {
-    {
+  useEffect(
+    () => () => {
       if (formData.photo && formData.photo.startsWith('blob:')) {
         URL.revokeObjectURL(formData.photo);
       }
-    }
-  }, [formData.photo]);
+    },
+    []
+  );
 
   return (
     <div className={styles.formContainer}>
@@ -71,6 +80,7 @@ export function FormAddStation() {
             value={formData.serialNumber}
             onChange={handleInputChange}
             className={styles.input}
+            placeholder='Введите номер'
             required
           />
         </div>
@@ -86,6 +96,7 @@ export function FormAddStation() {
             value={formData.nameStation}
             onChange={handleInputChange}
             className={styles.input}
+            placeholder='Введите название'
             required
           />
         </div>
@@ -134,13 +145,19 @@ export function FormAddStation() {
             onChange={handleInputChange}
             className={styles.input}
             placeholder='Введите модификацию'
+            required
           />
         </div>
 
-        <button type='submit' className={styles.submitButton}>
+        <button
+          type='submit'
+          className={`${styles.submitButton} ${!isFormValid() ? styles.submitButtonDisabled : ''}`}
+          disabled={isFormValid()}
+        >
           Сохранить
         </button>
       </form>
+
       <div className={styles.photo}>
         <div className={styles.imagesPlace}>
           {formData.photo ? (

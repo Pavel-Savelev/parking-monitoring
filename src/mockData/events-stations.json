@@ -1,6 +1,7 @@
 [
   {
     "id": "EV001",
+    "event_id":"1231412",
     "serialNumber": "SN2024-001",
     "nameStation": "Центральная парковка",
     "eventName": "Заезд автомобиля",
@@ -9,6 +10,7 @@
   },
   {
     "id": "EV002",
+    "event_id":"122",
     "serialNumber": "SN2024-001",
     "nameStation": "Центральная парковка",
     "eventName": "Выезд автомобиля",
@@ -17,6 +19,7 @@
   },
   {
     "id": "EV003",
+    "event_id":"1231412",
     "serialNumber": "SN2024-001",
     "nameStation": "Центральная парковка",
     "eventName": "Техническое обслуживание",
@@ -25,6 +28,7 @@
   },
   {
     "id": "EV004",
+    "event_id":"123324",
     "serialNumber": "SN2024-002",
     "nameStation": "Торговый центр 'Глобус'",
     "eventName": "Заезд автомобиля",
@@ -33,6 +37,7 @@
   },
   {
     "id": "EV005",
+    "event_id":"1231",
     "serialNumber": "SN2024-002",
     "nameStation": "Торговый центр 'Глобус'",
     "eventName": "Ошибка оплаты",
@@ -41,6 +46,7 @@
   },
   {
     "id": "EV006",
+    "event_id":"1231",
     "serialNumber": "SN2024-003",
     "nameStation": "Аэропорт Шереметьево",
     "eventName": "Заезд автомобиля",
@@ -49,6 +55,7 @@
   },
   {
     "id": "EV007",
+    "event_id":"1231",
     "serialNumber": "SN2024-003",
     "nameStation": "Аэропорт Шереметьево",
     "eventName": "Выезд автомобиля",
@@ -57,6 +64,7 @@
   },
   {
     "id": "EV008",
+    "event_id":"1231",
     "serialNumber": "SN2024-004",
     "nameStation": "Москва-Сити",
     "eventName": "Сбой системы",
@@ -65,6 +73,7 @@
   },
   {
     "id": "EV009",
+    "event_id":"1231",
     "serialNumber": "SN2024-005",
     "nameStation": "ВДНХ",
     "eventName": "Заезд автомобиля",
@@ -73,6 +82,7 @@
   },
   {
     "id": "EV010",
+    "event_id":"1231",
     "serialNumber": "SN2024-005",
     "nameStation": "ВДНХ",
     "eventName": "Выезд автомобиля",
@@ -81,6 +91,7 @@
   },
   {
     "id": "EV011",
+    "event_id":"1231",
     "serialNumber": "SN2024-006",
     "nameStation": "Центральный вокзал",
     "eventName": "Плановый осмотр",
@@ -89,6 +100,7 @@
   },
   {
     "id": "EV012",
+    "event_id":"1231",
     "serialNumber": "SN2024-007",
     "nameStation": "Невский проспект",
     "eventName": "Заезд автомобиля",
@@ -97,6 +109,7 @@
   },
   {
     "id": "EV013",
+    "event_id":"1231",
     "serialNumber": "SN2024-008",
     "nameStation": "ТРК 'Питер'",
     "eventName": "Обновление ПО",
@@ -105,6 +118,7 @@
   },
   {
     "id": "EV014",
+    "event_id":"1231",
     "serialNumber": "SN2024-009",
     "nameStation": "Казанский вокзал",
     "eventName": "Заезд автомобиля",
@@ -113,6 +127,7 @@
   },
   {
     "id": "EV015",
+    "event_id":"1231",
     "serialNumber": "SN2024-009",
     "nameStation": "Казанский вокзал",
     "eventName": "Выезд автомобиля",
@@ -121,6 +136,7 @@
   },
   {
     "id": "EV016",
+    "event_id":"1231",
     "serialNumber": "SN2024-010",
     "nameStation": "Кремлевская набережная",
     "eventName": "Отсутствие связи",
@@ -129,6 +145,7 @@
   },
   {
     "id": "EV017",
+    "event_id":"1231",
     "serialNumber": "SN2024-011",
     "nameStation": "Площадь Революции",
     "eventName": "Заезд автомобиля",
@@ -137,6 +154,7 @@
   },
   {
     "id": "EV018",
+    "event_id":"1231",
     "serialNumber": "SN2024-012",
     "nameStation": "Высоцкий",
     "eventName": "Выезд автомобиля",
@@ -145,6 +163,7 @@
   },
   {
     "id": "EV019",
+    "event_id":"1231",
     "serialNumber": "SN2023-001",
     "nameStation": "Старая станция",
     "eventName": "Ремонтные работы",
@@ -153,6 +172,7 @@
   },
   {
     "id": "EV020",
+    "event_id":"1231",
     "serialNumber": "SN2024-014",
     "nameStation": "Академгородок",
     "eventName": "Заезд автомобиля",
