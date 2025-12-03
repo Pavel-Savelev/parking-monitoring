@@ -2,7 +2,16 @@ import React, { forwardRef } from 'react';
 import styles from './Input.module.css';
 
 interface InputProps {
-  type?: 'text' | 'email' | 'password' | 'number' | 'tel' | 'url' | 'search';
+  type?:
+    | 'text'
+    | 'email'
+    | 'password'
+    | 'number'
+    | 'tel'
+    | 'url'
+    | 'search'
+    | 'date'
+    | 'datetime-local';
   value: string;
   onChange: (value: string) => void;
   placeholder?: string;

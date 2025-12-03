@@ -53,7 +53,7 @@ export function EventsListUI({ data }: IStationList) {
     },
     {
       name: 'Поиск по времени',
-      type: 'text' as const,
+      type: 'datetime-local' as const,
       value: filters.date,
       onChange: handleChange('date'),
       placeholder: 'Введите'
@@ -142,13 +142,12 @@ export function EventsListUI({ data }: IStationList) {
               <span>{station.eventName}</span>
               <span>{station.date}</span>
               <span>{station.durationEvent}</span>
-              {/* Исправлено: отображаем длительность */}
             </li>
           ))
         ) : (
-          <li className={styles.no_results}>
+          <div className={styles.no_results}>
             Нет данных, соответствующих фильтрам
-          </li>
+          </div>
         )}
       </ul>
     </div>

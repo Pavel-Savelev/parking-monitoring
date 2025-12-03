@@ -15,12 +15,15 @@
   --color-error: #bf3920;
   --color-text-disabled: #9CA197;
 
+  --color-text-special:rgb(31, 32, 46);
+
   /* Background colors */
   /* --bg-logo: #ABD27A; */
   --bg-color: #F8F8F8;
   --bg-color-opacity: #8e8e8e;
   --bg-item-color: #ffffff;
   --bg-accent: #3E7AA3;
+  --bg-special:#eff0ef;
 
   /* button */
   --bg-button: #F5F7F9;
@@ -36,7 +39,8 @@
   --bg-button-accent-focus: #F5F7F9;
 
   /* Border colors */
-  --border-accent: #F5F7F9;
+  --border-button: #3275b7;
+  --border-accent: #c9c9c9;
   --border-special: #F5F7F9;
   --border-disabled: #e4e8df;
 

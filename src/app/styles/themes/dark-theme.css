@@ -2,31 +2,23 @@
   /* Colors */
   --color-accent: #58a6ff;
   --color-accent-bright: #79c0ff;
-  --color-icon: #f0f6fc;
+  --color-icon: #d6d6d6;
   --color-svg-image: #c9d1d9;
-  --color-text: #e6edf3;
-  --color-text-subcategory: #e6edf3;
+  --color-text: #d5d5d5;
+  --color-text-special: #bdbdbd;
   --color-text-link: #58a6ff;
   --color-caption: #8d96a0;
   --color-error: #ff9c8a;
-
+  
   /* Background colors */
   --bg-logo: #0069d2;
   --bg-color: #0d1117;
+  --bg-color-page: #152921;
   --bg-color-opacity: rgba(255, 255, 255, 0.08);
-  --bg-card-color: #161b22;
+  --bg-list-color: #161f19;
   --bg-accent: #0069d2;
-
-  /* Tag colors */
-  --bg-tag-business: #4a4070;
-  --bg-tag-languages: #5d5a45;
-  --bg-tag-home: #5d4a45;
-  --bg-tag-creativity: #5d4568;
-  --bg-tag-education: #455d78;
-  --bg-tag-health: #456a52;
-  --bg-tag-programming: #456a78;
-  --bg-tag-plus: #455070;
-
+  --bg-special:#333333;
+  
   /* Универсальные состояния для всех тегов */
   --bg-tag-hover: rgba(107, 197, 255, 0.15);
   --bg-tag-focus: rgba(107, 197, 255, 0.25);
@@ -38,13 +30,14 @@
   --bg-button-focus: #323840;
 
   /* button-accent */
---bg-button-accent: #3275b7;
---bg-button-accent-hover: #3e85cc;
---bg-button-accent-active: #285b8c;
---bg-button-accent-focus: #3275b7;
+  --bg-button-accent: #23524b;
+  --bg-button-accent-hover: #3e85cc;
+  --bg-button-accent-active: #285b8c;
+  --bg-button-accent-focus: #3275b7;
 
   /* Border colors */
-  --border-accent: #0069d2;
+  --border-button: #3275b7;
+  --border-accent: #645b5b;
   --border-special: #3d444d;
 
   /* arrow */

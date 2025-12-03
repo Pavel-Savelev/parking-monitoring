@@ -124,18 +124,24 @@ export function StationsListUI({ data }: IStationList) {
         ))}
       </div>
       <ul className={styles.statin_list}>
-        {filteredData.map((station) => (
-          <li
-            key={station.serialNumber}
-            onClick={() => handleNavigate(station.id)}
-          >
-            <span>{station.serialNumber}</span>
-            <span>{station.nameStation}</span>
-            <span>{station.parkingStatus}</span>
-            <span>{station.city}</span>
-            <span>{station.useTime}</span>
-          </li>
-        ))}
+        {filteredData.length > 0 ? (
+          filteredData.map((station) => (
+            <li
+              key={station.serialNumber}
+              onClick={() => handleNavigate(station.id)}
+            >
+              <span>{station.serialNumber}</span>
+              <span>{station.nameStation}</span>
+              <span>{station.parkingStatus}</span>
+              <span>{station.city}</span>
+              <span>{station.useTime}</span>
+            </li>
+          ))
+        ) : (
+          <div className={styles.no_results}>
+            Нет данных, соответствующих фильтрам
+          </div>
+        )}
       </ul>
     </div>
   );

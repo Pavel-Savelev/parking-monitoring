@@ -1,7 +1,7 @@
 .sidebar {
   width: 16rem;
-  background-color: #FFFFFF;
-  color: #000000;
+  background-color: var(--bg-list-color);
+  color: var(--color-text);
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -19,18 +19,18 @@
 
 .navItem:hover {
   color: #fff;
-  background-color: #3E7AA3;
+  background-color: var(--bg-button-accent);
   transform: translateX(2.5px);
 }
 
 .navItem:focus {
   color: #fff;
-  background-color: #3E7AA3;
+  background-color: var(--bg-button-accent);;
 }
 
 .navItemActive{
   color: #fff !important;
-  background-color: #3E7AA3;
+  background-color: var(--bg-button-accent);;
 }
 
 .navItem {
@@ -57,7 +57,7 @@
 }
 
 .navItem:hover::before {
-  background-color: #3E7AA3;
+  background-color: var(--bg-button-accent);;
   width: 5px;
   height: 30px;
   left: -20px;

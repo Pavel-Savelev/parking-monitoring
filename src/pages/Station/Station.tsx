@@ -114,8 +114,8 @@ const data: IConnector[] = [
 ];
 
 export const StationCard: React.FC = () => {
-  const { serialNumber } = useParams();
-
+  const { id, event_id } = useParams();
+  console.log(id, event_id);
   return (
     <div className={styles.container}>
       <div className={styles.content_camera}>

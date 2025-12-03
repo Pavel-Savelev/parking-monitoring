@@ -1,8 +1,8 @@
 .info {
-  background-color: #ffffff;
+  background-color: var(--bg-list-accent);
   margin-top: 25px;
   height: 15.625rem;
-  color: black;
+  color: var(--color-text);
   display: flex;
   flex-direction: row;
   padding: 15px 20px;
@@ -22,7 +22,7 @@
 .list {
   margin-top: 7px;
   padding: 10px;
-  background-color: #f5f7f9;
+  background-color: var(--bg-special);
   min-height: 10rem;
   display: flex;
   flex-direction: column;
@@ -54,8 +54,7 @@
   margin-left: auto;
   flex-shrink: 0;
   padding: 5px 10px;
-  background-color: #3E7AA3;
-  color: #FFFFFF;
+  background-color: var(--bg-button-accent);
+  color: var(--color-text);
   border-radius: 2px;
 }
-

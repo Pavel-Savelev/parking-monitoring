@@ -2,7 +2,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  background-color: white;
+  color: var(--color-text);
+  background-color: var(--bg-list-color);
   padding: 30px 20px;
   border-radius: 10px;
 }
@@ -20,14 +21,14 @@
 }
 
 .label {
-  color: #241c57;
+  color: var(--color-text);
   font-size: 14px;
 }
 
 .input {
   height: 2.5rem;
   padding-left: 5px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--border-accent);
   border-radius: 3px;
   font-size: 16px;
   transition: border-color 0.2s ease;
@@ -36,7 +37,7 @@
 
 .input:focus {
   outline: none;
-  border-color: #3e7aa3;
+  border-color: var(--border-accent);
   box-shadow: 0 0 0 3px rgba(62, 122, 163, 0.1);
 }
 
@@ -50,9 +51,9 @@
 
 .submitButton {
   height: 2.625rem;
-  background-color: #3e7aa3;
-  color: white;
-  border: none;
+  background-color: transparent;
+  border:  1px solid var(--bg-button-accent);
+  color: var(--color-text);
   border-radius: 6px;
   font-size: 16px;
   font-weight: 500;
@@ -61,7 +62,7 @@
 }
 
 .submitButton:hover {
-  background-color: #2d5a7a;
+  background-color: var(--bg-button-accent);
 }
 
 .submitButton:active {
@@ -81,11 +82,10 @@
   gap: 10px;
   align-items: center;
   justify-content: center;
-  border: 1px solid #e2e8f0;
   border-radius: 6px;
   font-size: 16px;
   transition: border-color 0.2s ease;
-  background-color: #3e7aa3;
+  background-color: var(--bg-button-accent);
   color: white;
   cursor: pointer;
 }
@@ -93,7 +93,7 @@
 .imagesPlace {
   border-radius: 4px;
   background-color: transparent;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--border-accent);
   width: 100%;
   max-height: 25rem;
   height: 100%;

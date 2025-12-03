@@ -30,7 +30,7 @@ export function EventItem({ data }: IEventProp) {
           </button>
         </div>
       </div>
-
+      <div className={styles.line} />
       <div className={`${styles.details} ${isExpanded ? styles.expanded : ''}`}>
         <div className={styles.detail_row}>
           <span className={styles.detail_label}>ID:</span>

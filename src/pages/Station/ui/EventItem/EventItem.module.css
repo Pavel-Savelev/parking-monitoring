@@ -1,7 +1,7 @@
 .item {
   width: 100%;
-  color: #241c57;
-  background-color: #f5f7f9;
+  color: var(--color-text-special);
+  background-color: var(--bg-special);
   font-family: var(--font-family-jost);
   font-size: var(--font-size-sm);
   padding: 0 5px;
@@ -26,11 +26,11 @@
 }
 
 .event_name {
-  color: #241c57;
+  color: var(--color-text-special);
 }
 
 .date {
-  color: #666;
+  color: var(--color-text-special);
   font-size: 0.9em;
 }
 
@@ -40,7 +40,7 @@
   border: none;
   font-size: 12px;
   cursor: pointer;
-  color: #3e7aa3;
+  color: var(--color-text-special);
 }
 
 .arrow_expanded {
@@ -69,11 +69,11 @@
 }
 
 .detail_label {
-  color: #555;
+  color: var(--color-text-special);
 }
 
 .detail_value {
-  color: #241c57;
+  color: var(--color-text-special);
   display: flex;
 }
 
@@ -86,8 +86,8 @@
 
 .details button {
   padding: 5px 8px;
-  color: white;
-  background-color: #3e7aa3;
+  color: var(--color-text);
+  background-color: var(--bg-button-accent);
   border-radius: 3px;
   border: none;
   cursor: pointer;
@@ -97,3 +97,10 @@
 .details button:hover {
   background-color: #2d5a7a;
 }
+
+.line {
+  background-color: var(--border-accent);
+  height: 1px;
+  width: 100%;
+}
+
