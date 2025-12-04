@@ -5,11 +5,13 @@
 .connector_gbt {
   width: 8.75rem;
   height: 9.5625rem;
+  margin-left: 20px;
 }
 
 .connector_chademo {
   width: 9.5625rem;
   height: 10.125rem;
+  margin-left: 20px;
 }
 
 .connector_type2 {
@@ -17,19 +19,24 @@
   height: 9rem;
   min-width: 195px;
   min-height: 120px;
+  margin-top: 0.45rem;
+  padding-left: 0px !important;
 }
 
 .connector_ccs {
   width: 50px;
   height: 50px;
+  margin-left: 20px;
 }
 
 .connector_type1 {
   width: 38px;
   height: 38px;
+  margin-left: 20px;
 }
 
 .connector_default {
   width: 40px;
   height: 40px;
+  margin-left: 20px;
 }

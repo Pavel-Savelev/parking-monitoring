@@ -1,47 +1,54 @@
-
+/* Подключаем шрифт */
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --font-size: 16px;
   /* Colors */
-  --color-gray:#F5F7F9;
-  --color-accent: #3E7AA3;
+  --color-gray: #f5f7f9;
+  --color-accent: #3e7aa3;
   --color-accent-bright: #253017;
   --color-icon: black;
   --color-svg-image: black;
-  --color-text: #0B1117;
-  --color-text-connector: #241C57;
-  --color-text-link: #ABB1BF;
+  --color-text: #0b1117;
+  --color-text-connector: #241c57;
+  --color-text-link: #abb1bf;
   --color-text-warning: #ffa500;
   --color-error: #bf3920;
-  --color-text-disabled: #9CA197;
+  --color-text-disabled: #9ca197;
 
-  --color-text-special:rgb(31, 32, 46);
+  --color-text-special: rgb(31, 32, 46);
 
   /* Background colors */
-  /* --bg-logo: #ABD27A; */
-  --bg-color: #F8F8F8;
+  --bg-color: #f8f8f8;
   --bg-color-opacity: #8e8e8e;
   --bg-item-color: #ffffff;
-  --bg-accent: #3E7AA3;
-  --bg-special:#eff0ef;
-
+  --bg-accent: #3e7aa3;
+  --bg-special: #eff0ef;
+  --bg-color-page: #f9faf7;
+  --bg-list-color: #ffffff;
   /* button */
-  --bg-button: #F5F7F9;
-  --bg-button-active: #3E7AA3;
-  --bg-button-hover: #3E7AA3;
-  --bg-button-focus: #3E7AA3;
+  --bg-button: #f5f7f9;
+  --bg-button-active: #3e7aa3;
+  --bg-button-hover: #274d68;
+  --bg-button-focus: #3e7aa3;
   --bg-button-disabled: #e4e8df;
 
   /* button-accent" */
-  --bg-button-accent: #3E7AA3;
-  --bg-button-accent-active: #F5F7F9;
-  --bg-button-accent-hover: #F5F7F9;
-  --bg-button-accent-focus: #F5F7F9;
+  --bg-button-accent: #3e7aa3;
+  --bg-button-accent-active: #f5f7f9;
+  --bg-button-accent-hover: #f5f7f9;
+  --bg-button-accent-focus: #f5f7f9;
 
   /* Border colors */
   --border-button: #3275b7;
   --border-accent: #c9c9c9;
-  --border-special: #F5F7F9;
+  --border-special: #f5f7f9;
   --border-disabled: #e4e8df;
 
   /* Shadows */
@@ -72,6 +79,9 @@
   --font-family-opensans: 'Open Sans SemiBold', sans-serif;
   --font-family-jost: 'Jost SemiBold', sans-serif;
   --font-family-roboto: 'Roboto Regular', sans-serif;
+  --font-family-inter: 'Inter Regular', sans-serif;
+  --font-family-poppins: 'Poppins Medium', sans-serif;
+/* Подключаем шрифт */
 
   /* font Weights */
   --font-weight-regular: 400;

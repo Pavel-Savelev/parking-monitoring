@@ -1,19 +1,8 @@
-.connectors_list {
-  color: black;
-  width: 100%;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .connector {
   position: relative;
-  background-color: white;
   height: 9.375rem;
   width: 30%;
   padding-top: 5px;
-  padding-left: 25px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -21,22 +10,17 @@
   color: #241C57;
 }
 
-.connector_image {
-  position: relative;
-  width: 150px;
-  height: 150px;
-}
-
-.connector_type {
-  position: absolute;
-}
 .connectors_list {
+  width: 100%;
+  list-style: none;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   gap: 16px;
 }
 
 .connector_image {
+  position: relative;
   width: 150px;
   height: 140px;
   object-fit: contain;
@@ -44,18 +28,18 @@
 }
 
 .connector_type {
-  font-weight: 600;
-  font-size: 14px;
+  position: absolute;
+  font-weight: var(--font-weight-semibold);
   color: #241C57;
   margin: 0;
-  font-family: var(--font-family-roboto);
+  font-family: var(--font-family-poppins);
   font-size: var(--font-size-xl);
+  padding-left: 5px;
 }
 
 .connector_status {
-  font-size: 12px;
+  font-size: var(--font-size-xs);
   color: #666;
   padding: 2px 8px;
   border-radius: 12px;
-  background: #f5f5f5;
 }

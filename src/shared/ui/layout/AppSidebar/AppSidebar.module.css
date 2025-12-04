@@ -34,6 +34,7 @@
 }
 
 .navItem {
+  font-family: var(--font-family-inter);
   display: flex;
   width: 100%;
   height: 3rem;

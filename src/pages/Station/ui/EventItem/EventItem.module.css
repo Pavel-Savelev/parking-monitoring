@@ -82,11 +82,11 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 10px;
+  color: white;
 }
 
 .details button {
   padding: 5px 8px;
-  color: var(--color-text);
   background-color: var(--bg-button-accent);
   border-radius: 3px;
   border: none;
@@ -95,7 +95,7 @@
 }
 
 .details button:hover {
-  background-color: #2d5a7a;
+  background-color: var( --bg-button-hover);
 }
 
 .line {

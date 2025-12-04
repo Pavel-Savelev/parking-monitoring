@@ -6,6 +6,7 @@
   background-color: var(--bg-list-color);
   padding: 30px 20px;
   border-radius: 10px;
+  font-family: var(--font-family-inter);
 }
 
 .form {
@@ -46,7 +47,7 @@
 }
 
 .input:required {
-  border-left: 3px solid #3e7aa3;
+  border-left: 3px solid var(--border-accent);
 }
 
 .submitButton {

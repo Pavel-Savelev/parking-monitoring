@@ -7,6 +7,7 @@
   flex-direction: row;
   padding: 15px 20px;
   gap: 30px;
+  font-family: var(--font-family-inter);
 }
 
 .info_event {
@@ -30,7 +31,7 @@
 }
 
 .line {
-  background-color: #e2e2e2;
+  background-color:var(--border-accent);
   height: 1px;
   width: 100%;
 }
@@ -57,4 +58,10 @@
   background-color: var(--bg-button-accent);
   color: var(--color-text);
   border-radius: 2px;
+  transition: var(--transition-normal);
+  color: white;
+}
+
+.item button:hover{
+  background-color:var(--bg-button-hover) ;
 }

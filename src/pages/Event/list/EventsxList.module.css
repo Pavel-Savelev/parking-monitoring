@@ -65,6 +65,7 @@
   border-radius: 2px;
   height: 3.2rem;
   transition: all 0.3s ease;
+  font-family: var(--font-family-inter);
 }
 
 .statin_list li span {
@@ -95,6 +96,7 @@
   justify-content: space-between;
   padding-top: 20px;
   font-size: 20px;
+  font-family: var(--font-family-inter);
 }
 
 .filter_item input {
@@ -111,7 +113,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  cursor:not-allowed;
+  cursor: not-allowed;
   background-color: var(--bg-list-color);
   padding: 0 5px;
   height: 3.2rem;

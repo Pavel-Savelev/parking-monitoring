@@ -5,7 +5,7 @@ function IconListEvents({
   className = '',
   width = 24,
   height = 24,
-  color = 'var(--color-icon)'
+  color = 'currentColor'
 }: IconProps): JSX.Element {
   return (
     <svg
