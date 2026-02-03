@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './AppSidebar.module.css';
 import { useNavigate, useLocation } from 'react-router-dom';
 import IconParking from '../../../../../public/images/icons/iconsCompanents/Parking';
@@ -37,19 +37,9 @@ export const AppSidebar: React.FC = (): JSX.Element => {
     }
   ];
 
-  function handleNavigate(href: string): void {
-    navigate(href);
+  function handleNavigate(item: SidebarItem): void {
+    navigate(item.href);
   }
-
-  const isActive = (href: string): boolean => {
-    if (href === '/' && location.pathname === '/') {
-      return true;
-    }
-    if (href !== '/') {
-      return location.pathname.startsWith(href);
-    }
-    return false;
-  };
 
   return (
     <aside className={styles.sidebar}>
@@ -57,8 +47,8 @@ export const AppSidebar: React.FC = (): JSX.Element => {
         {menu.map((item, index) => (
           <div
             key={index}
-            className={`${styles.navItem} ${isActive(item.href) ? styles.navItemActive : ''}`}
-            onClick={() => handleNavigate(item.href)}
+            className={`${styles.navItem} ${location.pathname === item.href ? styles.active : ``}`}
+            onClick={() => handleNavigate(item)}
           >
             {item.icon}
             <button key={item.href}>{item.label}</button>

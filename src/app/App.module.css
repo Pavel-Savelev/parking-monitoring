@@ -16,7 +16,6 @@
   width: 100%; 
   color: var(--color-text);
   padding: 25px 20px;
-  background-color: var(--bg-color-page);
-  /* overflow-y: auto; убираем */
+  background-color: var(--bg-page);
 }
 

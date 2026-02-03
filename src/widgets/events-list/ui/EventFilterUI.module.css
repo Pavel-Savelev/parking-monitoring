@@ -1,0 +1,11 @@
+.filter {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.filter_item{
+    display: grid;
+    gap: 10px;
+    color: var(--color-gray);
+}

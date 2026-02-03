@@ -1,10 +1,12 @@
-.app_header{
+.app_header {
   width: 100%;
-  color: var(--color-text);
+  height: 84px;
   display: flex;
   align-items: center;
+  position: relative; /* обычный поток */
   background-color: var(--bg-list-color);
   border-bottom: 1px solid var(--border-accent);
+  z-index: 20; /* выше sidebar */
 }
 
 .app_header_container {

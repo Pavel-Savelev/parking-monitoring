@@ -1,17 +1,17 @@
 import { Routes, Route } from 'react-router-dom';
-import { Home } from '../../pages/Home/Home';
-import { StationCard } from '../../pages/Station/Station';
-import { Events } from '../../pages/Event/Events';
+import { StationsPage } from '@pages/StationsPage';
+import { StationPage } from '../../pages/Station/Station';
+import { EventsPage } from '@pages//EventsPage/EventsPage';
 import { AddStation } from '../../pages/AddStation/AddStation';
 import { Login } from '../../pages/Login/Login';
 import { Registration } from '../../pages/Registaration/Registartion';
 
 export const AppRouter = () => (
   <Routes>
-    <Route path='/' element={<Home />} />
-    <Route path='events' element={<Events />} />
-    <Route path='/station/:id' element={<StationCard />} />
-    <Route path='/station/:id/:event_id' element={<StationCard />} />
+    <Route path='/' element={<StationsPage />} />
+    <Route path='events' element={<EventsPage />} />
+    <Route path='/station/:id' element={<StationPage />} />
+    <Route path='/station/:id/:event_id' element={<StationPage />} />
     <Route path='/add-station' element={<AddStation />} />
     <Route path='/login' element={<Login />} />
     <Route path='/registration' element={<Registration />} />

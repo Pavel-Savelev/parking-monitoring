@@ -1,0 +1,17 @@
+[
+  {
+    "connectorName": "GBT",
+    "connectorType": "GBT",
+    "connectorStatus": "Available"
+  },
+  {
+    "connectorName": "Type-2",
+    "connectorType": "Type2",
+    "connectorStatus": "Charging"
+  },
+  {
+    "connectorName": "Chademo",
+    "connectorType": "Chademo",
+    "connectorStatus": "Unavailable"
+  }
+]

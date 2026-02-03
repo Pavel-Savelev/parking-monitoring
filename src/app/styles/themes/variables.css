@@ -10,7 +10,10 @@
 :root {
   --font-size: 16px;
   /* Colors */
-  --color-gray: #f5f7f9;
+  /* New colors */
+  --color-gray: #7B7B7B;
+  /* ---------- */
+
   --color-accent: #3e7aa3;
   --color-accent-bright: #253017;
   --color-icon: black;
@@ -25,6 +28,17 @@
   --color-text-special: rgb(31, 32, 46);
 
   /* Background colors */
+
+  /* New Background colors */
+  --bg-page:#E3E3E3;
+  --bg-main:#FFFFFF;
+  --bg-hover:#F4F4F4;
+  --bg-input: #F4F4F4;
+  --bg-connetctor-OK:#B0E0A3;
+  --bg-connetctor-Charging:#FBD97A;
+  --bg-connetctor-Error:#FF7477;
+  /* ---------------------- */
+
   --bg-color: #f8f8f8;
   --bg-color-opacity: #8e8e8e;
   --bg-item-color: #ffffff;
@@ -48,7 +62,7 @@
   /* Border colors */
   --border-button: #3275b7;
   --border-accent: #c9c9c9;
-  --border-special: #f5f7f9;
+  --border-special: #C3C3C3;
   --border-disabled: #e4e8df;
 
   /* Shadows */
