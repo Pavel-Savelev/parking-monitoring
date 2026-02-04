@@ -1,11 +1,41 @@
 .filter {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.5fr)
+    minmax(0, 2fr)
+    minmax(0, 2.5fr)
+    minmax(0, 2.5fr)
+    minmax(0, 1.5fr);
+  gap: 16px;
+  width: 100%;
+  font-family: var(--font-family-inter);
 }
 
-.filter_item{
-    display: grid;
-    gap: 10px;
-    color: var(--color-gray);
+.filterItem {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--color-gray);
+}
+
+.filterItem input,
+.filterItem span {
+  min-width: 0;         /* критично для grid */
+  max-width: 100%;      /* чтобы не вылазило */
+  box-sizing: border-box;
+}
+
+.filterItem > * {
+  min-width: 0;
+  width: 100%;
+}
+
+.filterItem label{
+    text-wrap: nowrap
+}
+
+.dateItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }

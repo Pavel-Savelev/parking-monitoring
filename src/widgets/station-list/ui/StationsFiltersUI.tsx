@@ -18,7 +18,7 @@ export function StationsFilters({ filters, onChange }: IProps) {
   return (
     <div className={styles.filter}>
       {filterList.map((item) => (
-        <div key={item.field} className={styles.filter_item}>
+        <div key={item.field} className={styles.filterItem}>
           <label>{item.name}</label>
           <Input
             type='text'

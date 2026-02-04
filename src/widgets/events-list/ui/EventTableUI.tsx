@@ -13,14 +13,14 @@ export const EventsTable = ({ data, onItemClick }: Props) => {
       {data.map((event) => (
         <li
           className={styles.item}
-          key={event.id}
-          onClick={() => onItemClick(event.id, event.event_id)}
+          key={event.station_id}
+          onClick={() => onItemClick(event.station_id, event.event_id)}
         >
           <span>{event.serialNumber}</span>
           <span>{event.nameStation}</span>
           <span>{event.eventName}</span>
-          <span>{event.date}</span>
-          <span>{event.durationEvent}</span>
+          <span className={styles.span_date}>{event.date}</span>
+          <span className={styles.span_duration}>{event.durationEvent}</span>
         </li>
       ))}
     </ul>

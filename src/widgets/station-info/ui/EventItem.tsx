@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import styles from './EventItem.module.css';
-import { IEventData } from 'shared/types';
+import { IStationEvent } from 'shared/types';
 
 interface IEventProp {
-  data: IEventData;
+  data: IStationEvent;
 }
 
 export function EventItem({ data }: IEventProp) {

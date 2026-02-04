@@ -12,7 +12,8 @@ export const EventsList = ({ data }: Props) => {
     serialNumber: '',
     stationName: '',
     event: '',
-    date: '',
+    dateFrom: '',
+    dateTo: '',
     durationTime: ''
   });
 
@@ -22,8 +23,18 @@ export const EventsList = ({ data }: Props) => {
 
   const filteredData = useMemo(
     () =>
-      data.filter(
-        (event) =>
+      data.filter((event) => {
+        const eventDate = event.date ? new Date(event.date).getTime() : null;
+        const from = filters.dateFrom
+          ? new Date(filters.dateFrom).getTime()
+          : null;
+        const to = filters.dateTo ? new Date(filters.dateTo).getTime() : null;
+
+        const dateMatch =
+          (!from || (eventDate && eventDate >= from)) &&
+          (!to || (eventDate && eventDate <= to));
+
+        return (
           (!filters.serialNumber ||
             event.serialNumber
               ?.toLowerCase()
@@ -36,17 +47,18 @@ export const EventsList = ({ data }: Props) => {
             event.eventName
               ?.toLowerCase()
               .includes(filters.event.toLowerCase())) &&
-          (!filters.date || event.date?.includes(filters.date)) &&
+          dateMatch &&
           (!filters.durationTime ||
             event.durationEvent
               ?.toLowerCase()
               .includes(filters.durationTime.toLowerCase()))
-      ),
+        );
+      }),
     [data, filters]
   );
 
   const handleNavigate = (id: string, eventId: string) => {
-    console.log('Navigate to', id, eventId); // здесь можно useNavigate, если нужен роутинг
+    console.log('Navigate to', id, eventId); // здесь можно useNavigate
   };
 
   return (

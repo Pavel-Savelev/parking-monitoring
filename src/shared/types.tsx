@@ -1,3 +1,5 @@
+import { connect } from 'http2';
+
 export interface IStationData {
   id: string;
   serialNumber: string;
@@ -14,7 +16,7 @@ export interface IStationData {
 
 export interface IEventData {
   serialNumber: string;
-  id: string;
+  station_id: string;
   nameStation: string;
   eventName: string;
   date: string;
@@ -39,13 +41,19 @@ export interface IItem {
   value: string;
   placeholder?: string;
 }
-export interface IConnector {
+interface IConnector {
   connectorType: string;
   connectorStatus: string;
   connectorName: string;
 }
 
+export interface IConnectors {
+  station_id: string;
+  connectors: IConnector[];
+}
+
 export interface IMainData {
+  station_id: string;
   event: string;
   date: string;
   address: string;
@@ -55,11 +63,16 @@ export interface IMainData {
   personFace: string;
 }
 
-export interface IEventData {
+export interface IStationEvent {
   id: string;
   date: string;
   eventName: string;
   plateAuto: string;
   typeAuto: 'electrical' | 'gas';
   address: string;
+}
+
+export interface IEventStationData {
+  station_id: string;
+  events: IStationEvent[];
 }

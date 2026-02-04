@@ -11,7 +11,7 @@
   --font-size: 16px;
   /* Colors */
   /* New colors */
-  --color-gray: #7B7B7B;
+  --color-gray: #7b7b7b;
   /* ---------- */
 
   --color-accent: #3e7aa3;
@@ -30,13 +30,13 @@
   /* Background colors */
 
   /* New Background colors */
-  --bg-page:#E3E3E3;
-  --bg-main:#FFFFFF;
-  --bg-hover:#F4F4F4;
-  --bg-input: #F4F4F4;
-  --bg-connetctor-OK:#B0E0A3;
-  --bg-connetctor-Charging:#FBD97A;
-  --bg-connetctor-Error:#FF7477;
+  --bg-page: #e3e3e3;
+  --bg-main: #ffffff;
+  --bg-hover: #f4f4f4;
+  --bg-input: #f4f4f4;
+  --bg-connetctor-OK: #b0e0a3;
+  --bg-connetctor-Charging: #fbd97a;
+  --bg-connetctor-Error: #ff7477;
   /* ---------------------- */
 
   --bg-color: #f8f8f8;
@@ -62,7 +62,7 @@
   /* Border colors */
   --border-button: #3275b7;
   --border-accent: #c9c9c9;
-  --border-special: #C3C3C3;
+  --border-special: #c3c3c3;
   --border-disabled: #e4e8df;
 
   /* Shadows */
@@ -95,7 +95,7 @@
   --font-family-roboto: 'Roboto Regular', sans-serif;
   --font-family-inter: 'Inter Regular', sans-serif;
   --font-family-poppins: 'Poppins Medium', sans-serif;
-/* Подключаем шрифт */
+  /* Подключаем шрифт */
 
   /* font Weights */
   --font-weight-regular: 400;
@@ -108,6 +108,13 @@
   --font-size-lg: 1.125rem;
   --font-size-xl: 1.25rem;
   --font-size-2xl: 1.5rem;
+
+  /* font-size + */
+
+  --fs-xs: clamp(12px, 0.9vw, 14px);
+  --fs-sm: clamp(14px, 1.1vw, 16px);
+  --fs-md: clamp(16px, 1.3vw, 18px);
+  --fs-lg: clamp(20px, 1.6vw, 24px);
 
   /* Transitions */
   --transition-fast: 150ms ease-in-out;

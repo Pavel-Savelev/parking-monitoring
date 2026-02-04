@@ -7,28 +7,33 @@
   width: 100%;
   margin-top: 15px;
   border-radius: 10px;
+  
 }
 
 .item {
   position: relative;
   cursor: pointer;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  align-items: center;
-  padding: 0 5px;
+
+  grid-template-columns:
+    minmax(0, 1.5fr)
+    minmax(0, 2fr)
+    minmax(0, 2.5fr)
+    minmax(0, 2.5fr)
+    minmax(0, 1.5fr);
+  gap: 16px;
+  width: 100%;
   border-bottom: 0.5px solid var(--border-special);
   border-radius: 2px;
-  height: 3.2rem;
   transition: all 0.3s ease;
   font-family: var(--font-family-inter);
+  font-size: var(--fs-sm);
+  padding-left: 10px;
+  height:60px ;
 }
 
 .item:last-child{
   border: none;
-}
-
-.item span{
-  padding-left: 10px;
 }
 
 .item:hover{
@@ -48,6 +53,28 @@
 
 .item:hover::before {
   width: 6px;
+}
+
+
+.item span{
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.span_date{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.span_duration{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
 }
 
 .no_results {

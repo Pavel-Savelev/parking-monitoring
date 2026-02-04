@@ -1,6 +1,6 @@
 [
   {
-    "id": "ST001",
+    "id": "111",
     "serialNumber": "SN2024-001",
     "nameStation": "Центральная парковка",
     "parkingStatus": "Занято",
@@ -8,7 +8,7 @@
     "useTime": "2 часа 15 мин"
   },
   {
-    "id": "ST002",
+    "id": "222",
     "serialNumber": "SN2024-002",
     "nameStation": "Торговый центр 'Глобус'",
     "parkingStatus": "Свободно",

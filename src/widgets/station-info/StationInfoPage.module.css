@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+}
+
+.content_camera {
+  width: 100%;
+  padding: 1.56rem 3.75rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.content_events {
+  min-width: 17rem;
+  background-color: white;
+  margin-left: auto;
+  border-radius: 5px;
+}

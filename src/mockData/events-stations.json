@@ -1,6 +1,6 @@
 [
   {
-    "id": "EV001",
+    "station_id": "111",
     "event_id":"1231412",
     "serialNumber": "SN2024-001",
     "nameStation": "Центральная парковка",
@@ -9,7 +9,7 @@
     "durationEvent": "5 мин"
   },
   {
-    "id": "EV002",
+    "station_id": "222",
     "event_id":"122",
     "serialNumber": "SN2024-001",
     "nameStation": "Центральная парковка",
@@ -18,7 +18,7 @@
     "durationEvent": "2 мин"
   },
   {
-    "id": "EV003",
+    "station_id": "EV003",
     "event_id":"1231412",
     "serialNumber": "SN2024-001",
     "nameStation": "Центральная парковка",
@@ -27,7 +27,7 @@
     "durationEvent": "30 мин"
   },
   {
-    "id": "EV004",
+    "station_id": "EV004",
     "event_id":"123324",
     "serialNumber": "SN2024-002",
     "nameStation": "Торговый центр 'Глобус'",
@@ -36,7 +36,7 @@
     "durationEvent": "8 мин"
   },
   {
-    "id": "EV005",
+    "station_id": "EV005",
     "event_id":"1231",
     "serialNumber": "SN2024-002",
     "nameStation": "Торговый центр 'Глобус'",
@@ -45,7 +45,7 @@
     "durationEvent": "15 мин"
   },
   {
-    "id": "EV006",
+    "station_id": "EV006",
     "event_id":"1231",
     "serialNumber": "SN2024-003",
     "nameStation": "Аэропорт Шереметьево",
@@ -54,7 +54,7 @@
     "durationEvent": "7 мин"
   },
   {
-    "id": "EV007",
+    "station_id": "EV007",
     "event_id":"1231",
     "serialNumber": "SN2024-003",
     "nameStation": "Аэропорт Шереметьево",
@@ -63,7 +63,7 @@
     "durationEvent": "3 мин"
   },
   {
-    "id": "EV008",
+    "station_id": "EV008",
     "event_id":"1231",
     "serialNumber": "SN2024-004",
     "nameStation": "Москва-Сити",
@@ -72,7 +72,7 @@
     "durationEvent": "45 мин"
   },
   {
-    "id": "EV009",
+    "station_id": "EV009",
     "event_id":"1231",
     "serialNumber": "SN2024-005",
     "nameStation": "ВДНХ",
@@ -81,7 +81,7 @@
     "durationEvent": "6 мин"
   },
   {
-    "id": "EV010",
+    "station_id": "EV010",
     "event_id":"1231",
     "serialNumber": "SN2024-005",
     "nameStation": "ВДНХ",
@@ -90,7 +90,7 @@
     "durationEvent": "4 мин"
   },
   {
-    "id": "EV011",
+    "station_id": "EV011",
     "event_id":"1231",
     "serialNumber": "SN2024-006",
     "nameStation": "Центральный вокзал",
@@ -99,7 +99,7 @@
     "durationEvent": "1 час 20 мин"
   },
   {
-    "id": "EV012",
+    "station_id": "EV012",
     "event_id":"1231",
     "serialNumber": "SN2024-007",
     "nameStation": "Невский проспект",
@@ -108,7 +108,7 @@
     "durationEvent": "10 мин"
   },
   {
-    "id": "EV013",
+    "station_id": "EV013",
     "event_id":"1231",
     "serialNumber": "SN2024-008",
     "nameStation": "ТРК 'Питер'",
@@ -117,7 +117,7 @@
     "durationEvent": "2 часа 30 мин"
   },
   {
-    "id": "EV014",
+    "station_id": "EV014",
     "event_id":"1231",
     "serialNumber": "SN2024-009",
     "nameStation": "Казанский вокзал",
@@ -126,7 +126,7 @@
     "durationEvent": "12 мин"
   },
   {
-    "id": "EV015",
+    "station_id": "EV015",
     "event_id":"1231",
     "serialNumber": "SN2024-009",
     "nameStation": "Казанский вокзал",
@@ -135,7 +135,7 @@
     "durationEvent": "5 мин"
   },
   {
-    "id": "EV016",
+    "station_id": "EV016",
     "event_id":"1231",
     "serialNumber": "SN2024-010",
     "nameStation": "Кремлевская набережная",
@@ -144,7 +144,7 @@
     "durationEvent": "25 мин"
   },
   {
-    "id": "EV017",
+    "station_id": "EV017",
     "event_id":"1231",
     "serialNumber": "SN2024-011",
     "nameStation": "Площадь Революции",
@@ -153,7 +153,7 @@
     "durationEvent": "9 мин"
   },
   {
-    "id": "EV018",
+    "station_id": "EV018",
     "event_id":"1231",
     "serialNumber": "SN2024-012",
     "nameStation": "Высоцкий",
@@ -162,7 +162,7 @@
     "durationEvent": "3 мин"
   },
   {
-    "id": "EV019",
+    "station_id": "EV019",
     "event_id":"1231",
     "serialNumber": "SN2023-001",
     "nameStation": "Старая станция",
@@ -171,7 +171,7 @@
     "durationEvent": "4 часа 00 мин"
   },
   {
-    "id": "EV020",
+    "station_id": "EV020",
     "event_id":"1231",
     "serialNumber": "SN2024-014",
     "nameStation": "Академгородок",

@@ -22,12 +22,14 @@
 
 .list {
   margin-top: 7px;
+  margin-bottom: 7px;
   padding: 10px;
   background-color: var(--bg-special);
   min-height: 10rem;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
+  
+ display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
 
 .line {

@@ -1,21 +1,17 @@
 import styles from './Connectors.module.css';
-import { useGetConnectorImage } from 'shared/hooks/getConnectorImages/useGetConnectorImage';
-import { useConnectorStatusColor } from 'shared/hooks/getConnetctorStatusColor/useConnectorStatusColor';
+import { useGetConnectorImage } from '../../../shared/hooks/getConnectorImages/useGetConnectorImage';
+import { useConnectorStatusColor } from '../../../shared/hooks/getConnetctorStatusColor/useConnectorStatusColor';
 
-interface IConnector {
-  connectorType: string;
-  connectorStatus: string;
-  connectorName: string;
+import { IConnectors } from 'shared/types';
+
+interface IDataProps {
+  data: IConnectors;
 }
 
-interface IConnectorsProp {
-  data: IConnector[];
-}
-
-export function Connectors({ data }: IConnectorsProp) {
+export function Connectors({ data }: IDataProps) {
   return (
     <div className={styles.connectors_list}>
-      {data.map((con, index) => {
+      {data.connectors.map((con, index) => {
         const connectorData = useGetConnectorImage(con.connectorType);
         const statusStyle = useConnectorStatusColor(con.connectorStatus);
 

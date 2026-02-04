@@ -1,17 +1,42 @@
 [
   {
-    "connectorName": "GBT",
-    "connectorType": "GBT",
-    "connectorStatus": "Available"
+    "station_id": "111",
+    "connectors": [
+      {
+        "connectorName": "GBT",
+        "connectorType": "GBT",
+        "connectorStatus": "Available"
+      },
+      {
+        "connectorName": "Type-2",
+        "connectorType": "Type2",
+        "connectorStatus": "Charging"
+      },
+      {
+        "connectorName": "Chademo",
+        "connectorType": "Chademo",
+        "connectorStatus": "Unavailable"
+      }
+    ]
   },
   {
-    "connectorName": "Type-2",
-    "connectorType": "Type2",
-    "connectorStatus": "Charging"
-  },
-  {
-    "connectorName": "Chademo",
-    "connectorType": "Chademo",
-    "connectorStatus": "Unavailable"
+    "station_id": "222",
+    "connectors": [
+      {
+        "connectorName": "GBT",
+        "connectorType": "GBT",
+        "connectorStatus": "Available"
+      },
+      {
+        "connectorName": "Type-2",
+        "connectorType": "Type2",
+        "connectorStatus": "Charging"
+      },
+      {
+        "connectorName": "Chademo",
+        "connectorType": "Chademo",
+        "connectorStatus": "Unavailable"
+      }
+    ]
   }
 ]

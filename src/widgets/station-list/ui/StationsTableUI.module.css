@@ -13,25 +13,32 @@
   position: relative;
   cursor: pointer;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns:
+    minmax(0, 1.5fr)
+    minmax(0, 2fr)
+    minmax(0, 2.5fr)
+    minmax(0, 2.5fr)
+    minmax(0, 1.5fr);
+  gap: 16px;
+  width: 100%;
   align-items: center;
-  padding: 0 5px;
   border-bottom: 0.5px solid var(--border-special);
   border-radius: 2px;
-  height: 3.2rem;
+  height: 60px;
   transition: all 0.3s ease;
   font-family: var(--font-family-inter);
+  font-size: var(--fs-sm);
 }
 
-.item:last-child{
+.item:last-child {
   border: none;
 }
 
-.item span{
+.item span {
   padding-left: 10px;
 }
 
-.item:hover{
+.item:hover {
   background-color: var(--bg-hover);
 }
 

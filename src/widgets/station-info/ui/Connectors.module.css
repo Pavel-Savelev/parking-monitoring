@@ -31,6 +31,7 @@
   position: absolute;
   font-weight: var(--font-weight-semibold);
   color: #241C57;
+  filter: drop-shadow(-1px 3px 0.5px #1b1b1b38);
   margin: 0;
   font-family: var(--font-family-poppins);
   font-size: var(--font-size-xl);
@@ -38,7 +39,6 @@
 }
 
 .connector_status {
-  font-size: var(--font-size-xs);
   color: #666;
   padding: 2px 8px;
   border-radius: 12px;
