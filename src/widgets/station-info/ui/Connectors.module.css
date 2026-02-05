@@ -7,7 +7,12 @@
   flex-direction: column;
   overflow: hidden;
   border-radius: 10px;
-  color: #241C57;
+  box-shadow: 0 0 11px rgb(129, 129, 129);
+  transition: transform 0.3s ease; 
+}
+
+.connector:hover {
+  transform: scale(1.015);
 }
 
 .connectors_list {
@@ -30,8 +35,7 @@
 .connector_type {
   position: absolute;
   font-weight: var(--font-weight-semibold);
-  color: #241C57;
-  filter: drop-shadow(-1px 3px 0.5px #1b1b1b38);
+  filter: drop-shadow(-1px 3px 0.5px #1b1b1b1c);
   margin: 0;
   font-family: var(--font-family-poppins);
   font-size: var(--font-size-xl);

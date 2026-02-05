@@ -1,5 +1,4 @@
 .info {
-  background-color: var(--bg-list-accent);
   margin-top: 25px;
   height: 15.625rem;
   color: var(--color-text);
@@ -24,16 +23,22 @@
   margin-top: 7px;
   margin-bottom: 7px;
   padding: 10px;
-  background-color: var(--bg-special);
+  background-color: var(--bg-main);
   min-height: 10rem;
-  
- display: grid;
+  box-shadow: 0 0 11px rgb(129, 129, 129);
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+  transition: transform 0.3s ease; 
+  border-radius: 2px;
+}
+
+.list:hover {
+  transform: scale(1.005);
 }
 
 .line {
-  background-color:var(--border-accent);
+  background-color: var(--border-accent);
   height: 1px;
   width: 100%;
 }
@@ -64,6 +69,6 @@
   color: white;
 }
 
-.item button:hover{
-  background-color:var(--bg-button-hover) ;
+.item button:hover {
+  background-color: var(--bg-button-hover);
 }

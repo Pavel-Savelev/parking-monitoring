@@ -19,7 +19,6 @@ export function Information({ data }: ICurrentEventProp) {
       <div className={styles.info_event}>
         <div className={styles.head}>
           <label>Информация</label>
-          {/* <span>Статус парковки: {data.parkingStatus}</span> */}
         </div>
         <div className={styles.line} />
         <div className={styles.list}>
