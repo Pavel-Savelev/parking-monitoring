@@ -59,11 +59,11 @@ export const AppHeader: React.FC = (): JSX.Element => {
     </svg>
   );
 
-  const navigationItems: NavigationItem[] = [
-    { label: 'Главная', href: '/' },
-    { label: 'О нас', href: '/about' },
-    { label: 'Контакты', href: '/contact' }
-  ];
+  // const navigationItems: NavigationItem[] = [
+  //   { label: 'Главная', href: '/' },
+  //   { label: 'О нас', href: '/about' },
+  //   { label: 'Контакты', href: '/contact' }
+  // ];
 
   return (
     <header className={styles.app_header}>
@@ -74,12 +74,12 @@ export const AppHeader: React.FC = (): JSX.Element => {
           <button className={styles.themeToggleButton} onClick={toggleTheme}>
             {isLightTheme ? <MoonIcon /> : <SunIcon />}
           </button>
-          {navigationItems.map((item) => (
+          {/* {navigationItems.map((item) => (
             <Link key={item.href} to={item.href} className={styles.navLink}>
               {item.icon && <span>{item.icon}</span>}
               {item.label}
-            </Link>
-          ))}
+            </Link> */}
+          {/* ))} */}
         </nav>
       </div>
     </header>

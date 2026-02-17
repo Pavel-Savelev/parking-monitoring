@@ -4,8 +4,9 @@ import stationEventsData from '../../mockData/station-events-info.json';
 import stationSimpleData from '../../mockData/station-main-data.json';
 import { IConnectors, IMainData, IEventStationData } from 'shared/types';
 import { useParams } from 'react-router-dom';
-
+// TODO переделать логику в виджеты и даже передачу данных апи
 export const StationPage: React.FC = () => {
+  // id вызываем здесь и передаем в chilldren дальше
   const { id } = useParams();
 
   const mainInfoStation: IMainData[] = stationSimpleData as IMainData[];

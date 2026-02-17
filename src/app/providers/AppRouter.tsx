@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
-import { StationsPage } from '@pages/StationsPage';
-import { StationPage } from '../../pages/Station/Station';
-import { EventsPage } from '@pages//EventsPage/EventsPage';
-import { AddStation } from '../../pages/AddStation/AddStation';
-import { Login } from '../../pages/Login/Login';
-import { Registration } from '../../pages/Registaration/Registartion';
+import { StationsPage } from '@pages/Stations';
+import { StationPage } from '@pages/Station/Station';
+import { EventsPage } from '@pages//Events/EventsPage';
+import { AddStation } from '@pages/AddStation/AddStation';
+import { Login } from '@pages/Login/Login';
+import { Registration } from '@pages/Registaration/Registartion';
 
 export const AppRouter = () => (
   <Routes>
