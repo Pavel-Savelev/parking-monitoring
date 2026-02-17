@@ -42,7 +42,7 @@
   box-shadow: 0 0 0 3px rgba(62, 122, 163, 0.1);
 }
 
-.input:hover{
+.input:hover {
   border-color: #999;
 }
 
@@ -53,7 +53,7 @@
 .submitButton {
   height: 2.625rem;
   background-color: transparent;
-  border:  1px solid var(--bg-button-accent);
+  border: 1px solid var(--bg-button-accent);
   color: var(--color-text);
   border-radius: 6px;
   font-size: 16px;
@@ -78,19 +78,6 @@
   padding-top: 25px;
 }
 
-.choicePage {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 6px;
-  font-size: 16px;
-  transition: border-color 0.2s ease;
-  background-color: var(--bg-button-accent);
-  color: white;
-  cursor: pointer;
-}
-
 .imagesPlace {
   border-radius: 4px;
   background-color: transparent;
@@ -107,8 +94,6 @@
   background-repeat: no-repeat;
 }
 
-
-
 /* Сброс всех стилей браузера для input file */
 .hiddenInput {
   /* Убираем стандартные стили */
@@ -120,18 +105,60 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.667rem;
   /* Прячем стандартную кнопку */
   &::-webkit-file-upload-button {
     background-color: transparent;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  /* &::file-selector-button {
+  &::file-selector-button {
     display: none;
-  } */
+  }
 
   /* Опционально: стили для области перетаскивания */
   width: 100%;
   cursor: pointer;
+}
+
+.hiddenInput:hover {
+  background-color: var(--bg-button-accent-active);
+}
+
+.choicePage {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border-radius: var(--radius-sm);
+  font-size: 16px;
+  transition: border-color 0.2s ease;
+  cursor: pointer;
+  min-height: var(--button-height); 
+  padding: 0 var(--space-lg);
+  background-color: var(--bg-button-accent);
+  color: var(--color-text-for-accent);
+  border: 1px solid transparent;
+  width: 100%;
+  transition:
+    background var(--transition-fast),
+    border var(--transition-fast),
+    color var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.choicePage:hover {
+  background-color: var(--bg-button-accent-hover);
+  color: var(--color-text);
+}
+
+.choicePage.hasPhoto::after {
+  content: 'Фото выбрано';
+}
+
+.imagesPlace span {
+  font-size: 60px;
+  color: var(--border-accent);
+  opacity: 0.9;
 }

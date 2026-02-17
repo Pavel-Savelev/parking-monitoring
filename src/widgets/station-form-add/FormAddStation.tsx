@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from './FormAddStation.module.css';
+import { Button } from '@ui/Button';
 
 interface IFormStation {
   serialNumber: string;
@@ -19,8 +20,6 @@ export function FormAddStation() {
     photo: '',
     address: ''
   });
-
-  let buttonDisabled;
 
   const [selectedFileName, setSelectedFileName] = useState('');
 
@@ -47,14 +46,13 @@ export function FormAddStation() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Данные формы:', formData);
-    // Здесь будет логика сохранения
   };
 
   const isFormValid = () =>
-    formData.serialNumber.trim() !== '' &&
-    formData.nameStation.trim() !== '' &&
-    formData.address.trim() !== '' &&
-    formData.ip.trim() !== '';
+    formData.serialNumber.trim() == '' ||
+    formData.nameStation.trim() == '' ||
+    formData.address.trim() == '' ||
+    formData.ip.trim() == '';
 
   // Очистка blob URL при размонтировании компонента
   useEffect(
@@ -73,6 +71,7 @@ export function FormAddStation() {
           <label htmlFor='serialNumber' className={styles.label}>
             Серийный номер *
           </label>
+          {/* TODO use <Input everyWHERE */}
           <input
             id='serialNumber'
             name='serialNumber'
@@ -145,17 +144,16 @@ export function FormAddStation() {
             onChange={handleInputChange}
             className={styles.input}
             placeholder='Введите модификацию'
-            required
           />
         </div>
 
-        <button
+        <Button
           type='submit'
-          className={`${styles.submitButton} ${!isFormValid() ? styles.submitButtonDisabled : ''}`}
+          // className={`${styles.submitButton} ${!isFormValid() ? styles.submitButtonDisabled : ''}`}
           disabled={isFormValid()}
         >
           Сохранить
-        </button>
+        </Button>
       </form>
 
       <div className={styles.photo}>
@@ -172,21 +170,24 @@ export function FormAddStation() {
               }}
             />
           ) : (
-            <span>Выберите изображение</span>
+            <span>+</span>
           )}
         </div>
-        <div className={styles.choicePage}>
-          {/* Скрытый input для файла */}
-          <input
-            id='photo'
-            name='photo'
-            type='file'
-            accept='image/*'
-            onChange={handleFileChange}
-            className={styles.hiddenInput}
-            required
-          />
-        </div>
+
+        {/* Кнопка для выбора фото */}
+        <label htmlFor='photo-upload' className={styles.choicePage}>
+          Выберите фото
+        </label>
+
+        {/* Скрытый input */}
+        <input
+          id='photo-upload'
+          name='photo'
+          type='file'
+          accept='image/*'
+          onChange={handleFileChange}
+          style={{ display: 'none' }}
+        />
       </div>
     </div>
   );
