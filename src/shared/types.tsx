@@ -76,3 +76,42 @@ export interface IEventStationData {
   station_id: string;
   events: IStationEvent[];
 }
+
+// API
+// EVENTS
+interface IZoneItem {
+  id: string;
+  status: 'FREE' | 'OCCUPIED';
+  vehicle_type: string | null;
+  plate: string | null;
+}
+
+interface IZones {
+  zones: IZoneItem[];
+}
+
+export interface IEvent {
+  id: string;
+  station_id: string;
+  source: 'IRZ' | 'ORANGE' | 'EXTERNAL' | string;
+  type:
+    | 'IMPACT'
+    | 'CV_EVENT'
+    | 'CONNECTOR_STATE_CHANGE'
+    | 'STATION_STATE_UPDATE'
+    | 'PARKING_STATUS'
+    | 'PARKING_VIOLATION'
+    | string;
+  timestamp: number;
+  severity: 'info' | 'warning' | 'critical' | string;
+  payload: IZones;
+  has_video: boolean;
+}
+
+// PARKING_STATUS_BY_STATION_ID
+export interface IParkingStatusByStatus {
+  event_id: string;
+  station_id: string;
+  timestamp: number;
+  payload: IZones[];
+}

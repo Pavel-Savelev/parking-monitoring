@@ -1,36 +1,35 @@
 // если появятся проблемы с загрусзкой можно использовать const controller = new AbortController();
 
+import { IParkingStatusByStatus } from 'shared/types';
 import { getParkingStatus } from '../api/parking-status/parking-status.api';
 import { useEffect, useState } from 'react';
 
 export function useParkingStatus(station_id: string) {
-  const [data, setData] = useState<any>(null);
-  const [loading, setLoading] = useState<any>(true);
-  const [error, setError] = useState<Error | null>(null);
+  const [data, setData] = useState<IParkingStatusByStatus>();
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const fetchEvents = async () => {
+    setLoading(true);
+    setError(null);
+
+    try {
+      const data = await getParkingStatus({ station_id });
+      setData(data);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Ошибка загрузки');
+    } finally {
+      setLoading(false);
+    }
+  };
 
   useEffect(() => {
-    let cancelled = false;
+    fetchEvents();
+  }, [station_id]);
 
-    async function load() {
-      setLoading(true);
-      setError(null);
-
-      try {
-        const res = await getParkingStatus({ station_id });
-        if (!cancelled) setData(res);
-      } catch (err) {
-        if (!cancelled) setError(err as Error);
-      } finally {
-        if (!cancelled) setLoading(false);
-      }
-    }
-
-    load();
-
-    return () => {
-      cancelled = true;
-    };
-  }, []);
-
-  return { data, loading, error };
+  return {
+    data,
+    loading,
+    error
+  };
 }
