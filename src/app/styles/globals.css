@@ -12,11 +12,41 @@ html {
 }
 
 body {
-  background-color:var(--bg-page);
+  background-color: var(--bg-page);
 }
 
 a,
 a:link,
 a:visited {
   color: var(--color-accent, #253017);
+}
+
+/* index.css или global.css */
+
+/* Для всей страницы */
+::-webkit-scrollbar {
+  width: 4px; /* ширина для вертикального скролла */
+  height: 4px; /* высота для горизонтального скролла */
+}
+
+/* Дорожка (трек) */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 4px;
+}
+
+/* Ползунок */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+/* Ползунок при наведении */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Уголок между скроллами */
+::-webkit-scrollbar-corner {
+  background: #f1f1f1;
 }

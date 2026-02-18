@@ -6,8 +6,7 @@
   background-color: var(--bg-main);
   width: 100%;
   margin-top: 15px;
-  border-radius: 10px;
-  
+  border-radius: 3px;
 }
 
 .item {
@@ -29,14 +28,14 @@
   font-family: var(--font-family-inter);
   font-size: var(--fs-sm);
   padding-left: 10px;
-  height:60px ;
+  height: 60px;
 }
 
-.item:last-child{
+.item:last-child {
   border: none;
 }
 
-.item:hover{
+.item:hover {
   background-color: var(--bg-hover);
 }
 
@@ -55,21 +54,20 @@
   width: 6px;
 }
 
-
-.item span{
+.item span {
   padding: 10px 0px;
   display: flex;
   align-items: center;
 }
 
-.span_date{
+.span_date {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
 
-.span_duration{
+.span_duration {
   display: flex;
   align-items: center;
   justify-content: center;

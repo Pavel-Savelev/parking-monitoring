@@ -20,7 +20,7 @@
 .input {
   padding: 10px 16px;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 3px;
   font-size: var(--font-size-sm);
   transition: all 0.2s ease;
   background-color: var(--bg-input);

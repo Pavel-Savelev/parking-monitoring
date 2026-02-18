@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import styles from './FormAddStation.module.css';
 import { Button } from '@ui/Button';
+import { Input } from '@ui/Input';
+import { isValidIp } from '../../utils/validation';
 
 interface IFormStation {
   serialNumber: string;
   nameStation: string;
   ip: string;
-  modification?: string;
+  modification: string | null;
   photo: string;
   address: string;
 }
@@ -21,25 +23,21 @@ export function FormAddStation() {
     address: ''
   });
 
-  const [selectedFileName, setSelectedFileName] = useState('');
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
 
     if (!file) return;
 
-    setSelectedFileName(file.name);
-
-    // Для предпросмотра
     const previewUrl = URL.createObjectURL(file);
     setFormData((prev) => ({ ...prev, photo: previewUrl }));
   };
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
+  const handleInputChange = (value: string, fieldName: string) => {
     setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [fieldName]: value
     }));
   };
 
@@ -48,11 +46,16 @@ export function FormAddStation() {
     console.log('Данные формы:', formData);
   };
 
+  const handleImagePlaceClick = () => {
+    fileInputRef.current?.click();
+  };
+
   const isFormValid = () =>
     formData.serialNumber.trim() == '' ||
     formData.nameStation.trim() == '' ||
     formData.address.trim() == '' ||
-    formData.ip.trim() == '';
+    formData.ip.trim() == '' ||
+    !isValidIp(formData.ip);
 
   // Очистка blob URL при размонтировании компонента
   useEffect(
@@ -69,15 +72,14 @@ export function FormAddStation() {
       <form onSubmit={handleSubmit} className={styles.form}>
         <div className={styles.formGroup}>
           <label htmlFor='serialNumber' className={styles.label}>
-            Серийный номер *
+            Серийный номер<span>*</span>
           </label>
-          {/* TODO use <Input everyWHERE */}
-          <input
+          <Input
             id='serialNumber'
             name='serialNumber'
             type='text'
             value={formData.serialNumber}
-            onChange={handleInputChange}
+            onChange={(value) => handleInputChange(value, 'serialNumber')}
             className={styles.input}
             placeholder='Введите номер'
             required
@@ -86,14 +88,14 @@ export function FormAddStation() {
 
         <div className={styles.formGroup}>
           <label htmlFor='nameStation' className={styles.label}>
-            Название станции *
+            Название станции<span>*</span>
           </label>
-          <input
+          <Input
             id='nameStation'
             name='nameStation'
             type='text'
             value={formData.nameStation}
-            onChange={handleInputChange}
+            onChange={(value) => handleInputChange(value, 'nameStation')}
             className={styles.input}
             placeholder='Введите название'
             required
@@ -102,14 +104,14 @@ export function FormAddStation() {
 
         <div className={styles.formGroup}>
           <label htmlFor='ip' className={styles.label}>
-            IP *
+            IP<span>*</span>
           </label>
-          <input
+          <Input
             id='ip'
             name='ip'
             type='text'
             value={formData.ip}
-            onChange={handleInputChange}
+            onChange={(value) => handleInputChange(value, 'ip')}
             className={styles.input}
             placeholder='Пример: 192.168.1.1'
             required
@@ -118,14 +120,15 @@ export function FormAddStation() {
 
         <div className={styles.formGroup}>
           <label htmlFor='address' className={styles.label}>
-            Адрес *
+            Адрес
+            <span>*</span>
           </label>
-          <input
+          <Input
             id='address'
             name='address'
             type='text'
             value={formData.address}
-            onChange={handleInputChange}
+            onChange={(value) => handleInputChange(value, 'address')}
             className={styles.input}
             placeholder='Введите адрес'
             required
@@ -136,12 +139,12 @@ export function FormAddStation() {
           <label htmlFor='modification' className={styles.label}>
             Модификация
           </label>
-          <input
+          <Input
             id='modification'
             name='modification'
             type='text'
-            value={formData.modification}
-            onChange={handleInputChange}
+            value={formData.modification ?? ''}
+            onChange={(value) => handleInputChange(value, 'modification')}
             className={styles.input}
             placeholder='Введите модификацию'
           />
@@ -157,7 +160,7 @@ export function FormAddStation() {
       </form>
 
       <div className={styles.photo}>
-        <div className={styles.imagesPlace}>
+        <div className={styles.imagesPlace} onClick={handleImagePlaceClick}>
           {formData.photo ? (
             <img
               src={formData.photo}
@@ -181,6 +184,7 @@ export function FormAddStation() {
 
         {/* Скрытый input */}
         <input
+          ref={fileInputRef}
           id='photo-upload'
           name='photo'
           type='file'

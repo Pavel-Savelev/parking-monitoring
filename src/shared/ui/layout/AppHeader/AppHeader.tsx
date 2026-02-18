@@ -59,27 +59,20 @@ export const AppHeader: React.FC = (): JSX.Element => {
     </svg>
   );
 
-  // const navigationItems: NavigationItem[] = [
-  //   { label: 'Главная', href: '/' },
-  //   { label: 'О нас', href: '/about' },
-  //   { label: 'Контакты', href: '/contact' }
-  // ];
+  // TODO LINK TO MAIN PAGE
 
   return (
     <header className={styles.app_header}>
       <div className={styles.app_header_container}>
-        <img src={Logo} alt='Logo' className={styles.logo} />
+        <Link to={'/'}>
+          <img src={Logo} alt='Logo' className={styles.logo} />
+        </Link>
+
         {/* <input type='text' className={styles.input} /> */}
         <nav className={styles.app_nav}>
           <button className={styles.themeToggleButton} onClick={toggleTheme}>
             {isLightTheme ? <MoonIcon /> : <SunIcon />}
           </button>
-          {/* {navigationItems.map((item) => (
-            <Link key={item.href} to={item.href} className={styles.navLink}>
-              {item.icon && <span>{item.icon}</span>}
-              {item.label}
-            </Link> */}
-          {/* ))} */}
         </nav>
       </div>
     </header>
