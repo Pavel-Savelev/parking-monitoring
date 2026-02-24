@@ -1,8 +1,10 @@
 import { Modal } from '@ui/Modal/Modal';
 import styles from './VideoList.module.css';
 import { useState } from 'react';
+import VideoModal from '../../../widgets/videoModal/VideoModal';
 
 interface IVideo {
+  id: string;
   name: string;
   something: string;
   date: Date;
@@ -12,7 +14,7 @@ interface IVideo {
 interface IVideoProps {
   data: IVideo[];
 }
-// Простой вариант без selectedVideo
+
 export function VideoSection({ data }: IVideoProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentVideo, setCurrentVideo] = useState<IVideo | null>(null);
@@ -55,15 +57,8 @@ export function VideoSection({ data }: IVideoProps) {
             : ''
         }
       >
-        {currentVideo && (
-          <div>
-            <p>{currentVideo.something}</p>
-            <div>
-              <div className={styles.modal_video}>video</div>
-              <div className={styles.modal_events}>{currentVideo.event}</div>
-            </div>
-          </div>
-        )}
+        {currentVideo && <VideoModal videoId={currentVideo.id} />}
+        {/* Было videoId={id} - исправил на currentVideo.id */}
       </Modal>
     </>
   );

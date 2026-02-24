@@ -6,7 +6,7 @@ interface MonitorProps {
 }
 
 export function Monitor({
-  streamUrl = 'http://192.168.21.162:5000/stream',
+  streamUrl = 'http://192.168.21.208:5000/api/live-stream',
   title = 'Camera Monitor'
 }: MonitorProps) {
   return (

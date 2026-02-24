@@ -8,31 +8,36 @@ import { VideoSection } from './ui/VideoList';
 // prosto tak
 const anyData = [
   {
-    name: 'goyda',
+    id: '12411',
+    name: 'ESC',
     something: 'true',
     date: new Date(),
     event: 'connector down'
   },
   {
-    name: 'goyda',
+    id: '11111',
+    name: 'ESC-11',
     something: 'true',
     date: new Date(),
     event: 'connector down'
   },
   {
-    name: 'goyda',
+    id: '123',
+    name: 'ES-2C',
     something: 'true',
     date: new Date(),
     event: 'connector down'
   },
   {
-    name: 'goyda',
+    id: '1245',
+    name: 'ESC-3',
     something: 'true',
     date: new Date(),
     event: 'connector down'
   },
   {
-    name: 'goyda',
+    id: '12455',
+    name: 'ESC-4',
     something: 'true',
     date: new Date(),
     event: 'connector down'

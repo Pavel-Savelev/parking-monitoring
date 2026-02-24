@@ -35,20 +35,6 @@
   transition: border-color 0.2s ease;
 }
 
-/* .input:focus {
-  outline: none;
-  border-color: var(--border-accent);
-  box-shadow: 0 0 0 3px rgba(62, 122, 163, 0.1);
-}
-
-.input:hover {
-  border-color: #999;
-}
-
-.input:required {
-  border-left: 3px solid var(--border-accent);
-} */
-
 .submitButton {
   height: 2.625rem;
   background-color: transparent;

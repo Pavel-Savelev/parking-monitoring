@@ -33,36 +33,3 @@ export function useParkingStatus(station_id: string) {
     error
   };
 }
-
-// более лучший варинт по мнению не моему
-// export function useParkingStatus(station_id: string) {
-// useEffect(() => {
-//   // 1. Создаем "пульт" для этого эффекта
-//   const controller = new AbortController();
-
-//   const fetchData = async () => {
-//     try {
-//       // 2. Привязываем сигнал к запросу
-//       const response = await axios.get(`/api/parking/${station_id}`, {
-//         signal: controller.signal  // 👈 ключевой момент
-//       });
-//       setData(response.data);
-//     } catch (err) {
-//       // 4. Ловим отмену
-//       if (axios.isCancel(err) || err.name === 'AbortError') {
-//         console.log('Запрос отменен');
-//         return;
-//       }
-//       setError(err.message);
-//     }
-//   };
-
-//   fetchData();
-
-//   // 3. При размонтировании или новой station_id - отменяем
-//   return () => {
-//     controller.abort(); // 🛑 Нажимаем красную кнопку
-//     // Все запросы с этим signal прерываются!
-//   };
-// }, [station_id]);
-// }

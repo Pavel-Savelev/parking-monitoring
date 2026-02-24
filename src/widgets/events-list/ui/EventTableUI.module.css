@@ -15,13 +15,12 @@
   display: grid;
 
   grid-template-columns:
-    minmax(0, 1.5fr)
+    minmax(0, 1.6fr)
     minmax(0, 2fr)
     minmax(0, 2.5fr)
     minmax(0, 2.5fr)
     minmax(0, 1.5fr);
   gap: 16px;
-  width: 100%;
   border-bottom: 0.5px solid var(--border-special);
   border-radius: 2px;
   transition: all 0.3s ease;
@@ -55,9 +54,34 @@
 }
 
 .item span {
-  padding: 10px 0px;
   display: flex;
   align-items: center;
+}
+
+.item span:first-child {
+  max-width: 90%; /* или 90% */
+  white-space: nowrap;
+  overflow-x: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.item span:first-child::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.item span:first-child::after {
+  content: '';
+  position: absolute;
+  bottom: -10px; /* или top: 100% */
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #f1f1f1;
+  border-radius: 4px;
+  pointer-events: none;
 }
 
 .span_date {

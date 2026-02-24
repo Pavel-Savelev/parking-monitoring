@@ -1,4 +1,4 @@
-import { getAllEvents } from 'api/all-events/getEvents';
+import { getAllEvents } from '../api/all-events/getEvents';
 import { useEffect, useState } from 'react';
 import { IEvent } from 'shared/types';
 

@@ -77,6 +77,8 @@ export interface IEventStationData {
   events: IStationEvent[];
 }
 
+
+
 // API
 // EVENTS
 interface IZoneItem {
@@ -87,25 +89,17 @@ interface IZoneItem {
 }
 
 interface IZones {
+  eventType: string;
   zones: IZoneItem[];
 }
 
 export interface IEvent {
   id: string;
   station_id: string;
-  source: 'IRZ' | 'ORANGE' | 'EXTERNAL' | string;
-  type:
-    | 'IMPACT'
-    | 'CV_EVENT'
-    | 'CONNECTOR_STATE_CHANGE'
-    | 'STATION_STATE_UPDATE'
-    | 'PARKING_STATUS'
-    | 'PARKING_VIOLATION'
-    | string;
-  timestamp: number;
-  severity: 'info' | 'warning' | 'critical' | string;
-  payload: IZones;
-  has_video: boolean;
+  event_type: string;
+  address: string;
+  end_time: string;
+  start_time: string;
 }
 
 // PARKING_STATUS_BY_STATION_ID

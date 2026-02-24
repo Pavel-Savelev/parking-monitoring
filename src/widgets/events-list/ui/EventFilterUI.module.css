@@ -18,24 +18,91 @@
   color: var(--color-gray);
 }
 
-.filterItem input,
-.filterItem span {
-  min-width: 0;         /* критично для grid */
-  max-width: 100%;      /* чтобы не вылазило */
-  box-sizing: border-box;
-}
-
 .filterItem > * {
   min-width: 0;
   width: 100%;
 }
 
-.filterItem label{
-    text-wrap: nowrap
+.filterItem input,
+.filterItem select,
+.filterItem span {
+  min-height: 39px;
+  max-height: 39px;
+}
+
+.filterItem input,
+.filterItem select {
+  padding: 10px 16px;
+  background-color: var(--bg-input);
+}
+
+.filterItem input,
+.filterItem span {
+  min-width: 0; /* критично для grid */
+  max-width: 100%; /* чтобы не вылазило */
+  box-sizing: border-box;
+}
+
+.filterItem select {
+  border-radius: var(--color-gray);
+  border: 1px solid rgb(223, 210, 210);
+  border-radius: 3px;
+}
+
+.filterItem label {
+  text-wrap: nowrap;
+}
+
+.filterInput select {
+  font-size: var(--font-size-sm);
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  
+}
+
+.filterItem select:focus-visible{
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
 }
 
 .dateItem {
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+
+.filterItem select option {
+  background-color: var(--bg-main);
+  color: var(--color-text);
+  transition: 0.2s ease;
+  padding: 8px 12px;
+}
+
+.filterItem select option:hover {
+  background-color: var(--bg-input);
+  color: var(--color-accent);
+}
+
+.filterItem select option:checked {
+  background-color: var(--bg-input);
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+/* Анимация появления с задержкой для каждого option */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.filterItem select option {
+  animation: fadeIn 0.2s ease forwards;
+  animation-delay: calc(0.05s * var(--option-index, 1));
 }

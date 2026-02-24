@@ -1,182 +1,250 @@
 [
   {
-    "station_id": "111",
-    "event_id":"1231412",
-    "serialNumber": "SN2024-001",
-    "nameStation": "Центральная парковка",
-    "eventName": "Заезд автомобиля",
-    "date": "2024-03-15 09:30:45",
-    "durationEvent": "5 мин"
+    "address": "ECS_001",
+    "end_time": "2026-02-19T21:13:06.991341",
+    "event_type": "PARKING_STATUS",
+    "id": "cv_1771506787086002346",
+    "start_time": "2026-02-19T21:13:06.991341",
+    "station_id": "ECS_001"
   },
   {
-    "station_id": "222",
-    "event_id":"122",
-    "serialNumber": "SN2024-001",
-    "nameStation": "Центральная парковка",
-    "eventName": "Выезд автомобиля",
-    "date": "2024-03-15 09:35:20",
-    "durationEvent": "2 мин"
+    "address": "ECS_001",
+    "end_time": "2026-02-19T21:13:06.529035",
+    "event_type": "PARKING_STATUS",
+    "id": "cv_1771506786621314621",
+    "start_time": "2026-02-19T21:13:06.529035",
+    "station_id": "ECS_001"
   },
   {
-    "station_id": "EV003",
-    "event_id":"1231412",
-    "serialNumber": "SN2024-001",
-    "nameStation": "Центральная парковка",
-    "eventName": "Техническое обслуживание",
-    "date": "2024-03-15 10:00:00",
-    "durationEvent": "30 мин"
+    "address": "ECS_001",
+    "end_time": "2026-02-19T21:13:02.148450",
+    "event_type": "PARKING_STATUS",
+    "id": "cv_1771506782246087826",
+    "start_time": "2026-02-19T21:13:02.148450",
+    "station_id": "ECS_001"
   },
   {
-    "station_id": "EV004",
-    "event_id":"123324",
-    "serialNumber": "SN2024-002",
-    "nameStation": "Торговый центр 'Глобус'",
-    "eventName": "Заезд автомобиля",
-    "date": "2024-03-15 11:15:30",
-    "durationEvent": "8 мин"
+    "address": "ECS_001",
+    "end_time": "2026-02-19T21:12:45.282883",
+    "event_type": "PARKING_STATUS",
+    "id": "cv_1771506765384780336",
+    "start_time": "2026-02-19T21:12:45.282883",
+    "station_id": "ECS_001"
   },
   {
-    "station_id": "EV005",
-    "event_id":"1231",
-    "serialNumber": "SN2024-002",
-    "nameStation": "Торговый центр 'Глобус'",
-    "eventName": "Ошибка оплаты",
-    "date": "2024-03-15 11:23:45",
-    "durationEvent": "15 мин"
+    "address": "ECS_001",
+    "end_time": "2026-02-19T21:12:44.779816",
+    "event_type": "PARKING_STATUS",
+    "id": "cv_1771506764891601253",
+    "start_time": "2026-02-19T21:12:44.779816",
+    "station_id": "ECS_001"
   },
   {
-    "station_id": "EV006",
-    "event_id":"1231",
-    "serialNumber": "SN2024-003",
-    "nameStation": "Аэропорт Шереметьево",
-    "eventName": "Заезд автомобиля",
-    "date": "2024-03-15 08:45:10",
-    "durationEvent": "7 мин"
+    "address": "ECS_001",
+    "end_time": "2026-02-19T21:12:41.808666",
+    "event_type": "PARKING_STATUS",
+    "id": "cv_1771506761904933302",
+    "start_time": "2026-02-19T21:12:41.808666",
+    "station_id": "ECS_001"
   },
   {
-    "station_id": "EV007",
-    "event_id":"1231",
-    "serialNumber": "SN2024-003",
-    "nameStation": "Аэропорт Шереметьево",
-    "eventName": "Выезд автомобиля",
-    "date": "2024-03-15 12:30:15",
-    "durationEvent": "3 мин"
+    "address": "ECS_001",
+    "end_time": "2026-02-19T21:12:31.601166",
+    "event_type": "PARKING_STATUS",
+    "id": "cv_1771506751715605298",
+    "start_time": "2026-02-19T21:12:31.601166",
+    "station_id": "ECS_001"
   },
   {
-    "station_id": "EV008",
-    "event_id":"1231",
-    "serialNumber": "SN2024-004",
-    "nameStation": "Москва-Сити",
-    "eventName": "Сбой системы",
-    "date": "2024-03-15 14:20:00",
-    "durationEvent": "45 мин"
+    "address": "ECS_001",
+    "end_time": "2026-02-19T21:12:31.133289",
+    "event_type": "PARKING_STATUS",
+    "id": "cv_1771506751243869206",
+    "start_time": "2026-02-19T21:12:31.133289",
+    "station_id": "ECS_001"
   },
   {
-    "station_id": "EV009",
-    "event_id":"1231",
-    "serialNumber": "SN2024-005",
-    "nameStation": "ВДНХ",
-    "eventName": "Заезд автомобиля",
-    "date": "2024-03-15 13:10:25",
-    "durationEvent": "6 мин"
+    "address": "ECS_001",
+    "end_time": "2026-02-19T21:09:17.201731",
+    "event_type": "PARKING_VIOLATION",
+    "id": "cv_1771506557374721727",
+    "start_time": "2026-02-19T21:09:17.201731",
+    "station_id": "ECS_001"
   },
   {
-    "station_id": "EV010",
-    "event_id":"1231",
-    "serialNumber": "SN2024-005",
-    "nameStation": "ВДНХ",
-    "eventName": "Выезд автомобиля",
-    "date": "2024-03-15 15:45:30",
-    "durationEvent": "4 мин"
+    "address": "ECS_001",
+    "end_time": "2026-02-19T21:04:22.288678",
+    "event_type": "PARKING_STATUS",
+    "id": "cv_1771506262460329814",
+    "start_time": "2026-02-19T21:04:22.288678",
+    "station_id": "ECS_001"
   },
   {
-    "station_id": "EV011",
-    "event_id":"1231",
-    "serialNumber": "SN2024-006",
-    "nameStation": "Центральный вокзал",
-    "eventName": "Плановый осмотр",
-    "date": "2024-03-15 07:00:00",
-    "durationEvent": "1 час 20 мин"
+    "address": "ECS_001",
+    "end_time": "2026-02-19T21:04:21.331995",
+    "event_type": "PARKING_STATUS",
+    "id": "cv_1771506261464609526",
+    "start_time": "2026-02-19T21:04:21.331995",
+    "station_id": "ECS_001"
   },
   {
-    "station_id": "EV012",
-    "event_id":"1231",
-    "serialNumber": "SN2024-007",
-    "nameStation": "Невский проспект",
-    "eventName": "Заезд автомобиля",
-    "date": "2024-03-15 16:30:45",
-    "durationEvent": "10 мин"
+    "address": "ECS_001",
+    "end_time": "2026-02-19T21:04:18.891698",
+    "event_type": "PARKING_STATUS",
+    "id": "cv_1771506258990359814",
+    "start_time": "2026-02-19T21:04:18.891698",
+    "station_id": "ECS_001"
   },
   {
-    "station_id": "EV013",
-    "event_id":"1231",
-    "serialNumber": "SN2024-008",
-    "nameStation": "ТРК 'Питер'",
-    "eventName": "Обновление ПО",
-    "date": "2024-03-15 03:00:00",
-    "durationEvent": "2 часа 30 мин"
+    "address": "ECS_001",
+    "end_time": "2026-02-19T21:04:17.484605",
+    "event_type": "PARKING_STATUS",
+    "id": "cv_1771506258270511424",
+    "start_time": "2026-02-19T21:04:17.484605",
+    "station_id": "ECS_001"
   },
   {
-    "station_id": "EV014",
-    "event_id":"1231",
-    "serialNumber": "SN2024-009",
-    "nameStation": "Казанский вокзал",
-    "eventName": "Заезд автомобиля",
-    "date": "2024-03-15 09:15:20",
-    "durationEvent": "12 мин"
+    "address": "ECS_001",
+    "end_time": "2026-02-19T21:04:17.011327",
+    "event_type": "PARKING_STATUS",
+    "id": "cv_1771506257116046377",
+    "start_time": "2026-02-19T21:04:17.011327",
+    "station_id": "ECS_001"
   },
   {
-    "station_id": "EV015",
-    "event_id":"1231",
-    "serialNumber": "SN2024-009",
-    "nameStation": "Казанский вокзал",
-    "eventName": "Выезд автомобиля",
-    "date": "2024-03-15 13:25:40",
-    "durationEvent": "5 мин"
+    "address": "ECS_001",
+    "end_time": "2026-02-19T21:04:11.213150",
+    "event_type": "PARKING_STATUS",
+    "id": "cv_1771506251312191402",
+    "start_time": "2026-02-19T21:04:11.213150",
+    "station_id": "ECS_001"
   },
   {
-    "station_id": "EV016",
-    "event_id":"1231",
-    "serialNumber": "SN2024-010",
-    "nameStation": "Кремлевская набережная",
-    "eventName": "Отсутствие связи",
-    "date": "2024-03-15 11:45:00",
-    "durationEvent": "25 мин"
+    "address": "ECS_001",
+    "end_time": "2026-02-19T21:00:04.176606",
+    "event_type": "PARKING_STATUS",
+    "id": "cv_1771506004282518770",
+    "start_time": "2026-02-19T21:00:04.176606",
+    "station_id": "ECS_001"
   },
   {
-    "station_id": "EV017",
-    "event_id":"1231",
-    "serialNumber": "SN2024-011",
-    "nameStation": "Площадь Революции",
-    "eventName": "Заезд автомобиля",
-    "date": "2024-03-15 10:30:15",
-    "durationEvent": "9 мин"
+    "address": "ECS_001",
+    "end_time": "2026-02-19T21:00:01.694058",
+    "event_type": "PARKING_STATUS",
+    "id": "cv_1771506001852311473",
+    "start_time": "2026-02-19T21:00:01.694058",
+    "station_id": "ECS_001"
   },
   {
-    "station_id": "EV018",
-    "event_id":"1231",
-    "serialNumber": "SN2024-012",
-    "nameStation": "Высоцкий",
-    "eventName": "Выезд автомобиля",
-    "date": "2024-03-15 18:20:30",
-    "durationEvent": "3 мин"
+    "address": "ECS_001",
+    "end_time": "2026-02-19T21:00:00.714173",
+    "event_type": "PARKING_STATUS",
+    "id": "cv_1771506000822855803",
+    "start_time": "2026-02-19T21:00:00.714173",
+    "station_id": "ECS_001"
   },
   {
-    "station_id": "EV019",
-    "event_id":"1231",
-    "serialNumber": "SN2023-001",
-    "nameStation": "Старая станция",
-    "eventName": "Ремонтные работы",
-    "date": "2024-03-15 08:00:00",
-    "durationEvent": "4 часа 00 мин"
+    "address": "ECS_001",
+    "end_time": "2026-02-19T20:59:57.856440",
+    "event_type": "PARKING_STATUS",
+    "id": "cv_1771505997961402338",
+    "start_time": "2026-02-19T20:59:57.856440",
+    "station_id": "ECS_001"
   },
   {
-    "station_id": "EV020",
-    "event_id":"1231",
-    "serialNumber": "SN2024-014",
-    "nameStation": "Академгородок",
-    "eventName": "Заезд автомобиля",
-    "date": "2024-03-15 17:45:10",
-    "durationEvent": "7 мин"
+    "address": "ECS_001",
+    "end_time": "2026-02-19T20:59:00.003090",
+    "event_type": "PARKING_STATUS",
+    "id": "cv_1771505940144898497",
+    "start_time": "2026-02-19T20:59:00.003090",
+    "station_id": "ECS_001"
+  },
+  {
+    "address": "ECS_001",
+    "end_time": "2026-02-19T20:58:51.383689",
+    "event_type": "PARKING_STATUS",
+    "id": "cv_1771505931483959741",
+    "start_time": "2026-02-19T20:58:51.383689",
+    "station_id": "ECS_001"
+  },
+  {
+    "address": "ECS_001",
+    "end_time": "2026-02-19T20:58:50.900070",
+    "event_type": "PARKING_STATUS",
+    "id": "cv_1771505930995607327",
+    "start_time": "2026-02-19T20:58:50.900070",
+    "station_id": "ECS_001"
+  },
+  {
+    "address": "ECS_001",
+    "end_time": "2026-02-19T20:58:50.426607",
+    "event_type": "PARKING_STATUS",
+    "id": "cv_1771505930521613681",
+    "start_time": "2026-02-19T20:58:50.426607",
+    "station_id": "ECS_001"
+  },
+  {
+    "address": "ECS_001",
+    "end_time": "2026-02-19T20:58:49.943378",
+    "event_type": "PARKING_STATUS",
+    "id": "cv_1771505930049362413",
+    "start_time": "2026-02-19T20:58:49.943378",
+    "station_id": "ECS_001"
+  },
+  {
+    "address": "ECS_001",
+    "end_time": "2026-02-19T20:58:46.108977",
+    "event_type": "PARKING_STATUS",
+    "id": "cv_1771505926218057391",
+    "start_time": "2026-02-19T20:58:46.108977",
+    "station_id": "ECS_001"
+  },
+  {
+    "address": "ECS_001",
+    "end_time": "2026-02-19T20:58:36.400758",
+    "event_type": "PARKING_STATUS",
+    "id": "cv_1771505916545368176",
+    "start_time": "2026-02-19T20:58:36.400758",
+    "station_id": "ECS_001"
+  },
+  {
+    "address": "ECS_001",
+    "end_time": "2026-02-19T20:58:34.995725",
+    "event_type": "PARKING_STATUS",
+    "id": "cv_1771505915126796474",
+    "start_time": "2026-02-19T20:58:34.995725",
+    "station_id": "ECS_001"
+  },
+  {
+    "address": "ECS_001",
+    "end_time": "2026-02-19T20:58:31.612321",
+    "event_type": "PARKING_STATUS",
+    "id": "cv_1771505911739431051",
+    "start_time": "2026-02-19T20:58:31.612321",
+    "station_id": "ECS_001"
+  },
+  {
+    "address": "ECS_001",
+    "end_time": "2026-02-19T20:32:12.617246",
+    "event_type": "PARKING_STATUS",
+    "id": "cv_1771504332723209458",
+    "start_time": "2026-02-19T20:32:12.617246",
+    "station_id": "ECS_001"
+  },
+  {
+    "address": "ST001",
+    "end_time": "2026-02-19T15:00:41",
+    "event_type": "PARKING_VIOLATION",
+    "id": "evt_orange_test_1771502441",
+    "start_time": "2026-02-19T15:00:41",
+    "station_id": "ST001"
+  },
+  {
+    "address": "ST001",
+    "end_time": "2025-02-19T10:26:40",
+    "event_type": "IMPACT",
+    "id": "impact_test_1",
+    "start_time": "2025-02-19T10:26:40",
+    "station_id": "ST001"
   }
 ]

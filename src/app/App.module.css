@@ -19,3 +19,17 @@
   background-color: var(--bg-page);
 }
 
+.main {
+  min-height: 100vh; /* вместо height */
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* центрирование по горизонтали */
+  
+  /* Контейнер для центрированного контента */
+  & > * {
+    width: 100%;
+    max-width: 1200px; /* максимальная ширина контента */
+  }
+}
+

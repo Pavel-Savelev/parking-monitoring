@@ -11,62 +11,68 @@ export const EventsFilters = ({ filters, onChange }: Props) => (
   <form className={style.filter}>
     {/* Серийный номер */}
     <div className={style.filterItem}>
-      <label htmlFor='serialNumber'>Серийный номер</label>
+      <label htmlFor='id'>Серийный номер</label>
       <Input
-        id='serialNumber'
+        id='id'
         type='text'
-        value={filters.serialNumber}
+        value={filters.id}
         placeholder='Введите'
-        onChange={(val) => onChange('serialNumber', val)}
+        onChange={(val) => onChange('id', val)}
       />
     </div>
 
     {/* Название станции */}
     <div className={style.filterItem}>
-      <label htmlFor='stationName'>Название станции</label>
+      <label htmlFor='station_id'>Название станции</label>
       <Input
-        id='stationName'
+        id='station_id'
         type='text'
-        value={filters.stationName}
+        value={filters.station_id}
         placeholder='Введите'
-        onChange={(val) => onChange('stationName', val)}
+        onChange={(val) => onChange('station_id', val)}
       />
     </div>
 
-    {/* Событие */}
     <div className={style.filterItem}>
-      <label htmlFor='event'>Поиск по событию</label>
+      <label htmlFor='event_type'>Поиск по событию</label>
+      <select
+        id='event_type'
+        value={filters.event_type}
+        onChange={(e) => onChange('event_type', e.target.value)}
+        // className={style.select}
+      >
+        <option value=''>Все</option>
+        <option value='IMPACT'>Повреждение</option>
+        <option value='CV_EVENT'>Событие</option>
+        <option value='CONNECTOR_STATE_CHANGE'>Изменение коннектора</option>
+        <option value='STATION_STATE_UPDATE'>Обновление станции</option>
+        <option value='PARKING_STATUS'>Статус парковки</option>
+        <option value='PARKING_VIOLATION'>Нарушение: занятие места</option>
+      </select>
+    </div>
+    <div className={style.filterItem}>
+      <label htmlFor='start_time'>Начало</label>
       <Input
-        id='event'
-        type='text'
-        value={filters.event}
-        placeholder='Введите'
-        onChange={(val) => onChange('event', val)}
+        type='datetime-local'
+        value={filters.start_time}
+        onChange={(val) => onChange('start_time', val)}
+      />
+      <label htmlFor='end_time'>Конец</label>
+      <Input
+        type='datetime-local'
+        value={filters.end_time}
+        onChange={(val) => onChange('end_time', val)}
       />
     </div>
     <div className={style.filterItem}>
-      <label htmlFor='event'>Начало</label>
-      <Input
-        type='datetime-local'
-        value={filters.dateFrom}
-        onChange={(val) => onChange('dateFrom', val)}
-      />
-      <label htmlFor='event'>Конец</label>
-      <Input
-        type='datetime-local'
-        value={filters.dateTo}
-        onChange={(val) => onChange('dateTo', val)}
-      />
-    </div>
-    <div className={style.filterItem}>
-      <label htmlFor='stationName'>Общее время</label>
-      <Input
-        id='stationName'
+      <label htmlFor='total'>Общее время</label>
+      {/* <Input
+        id='total'
         type='text'
-        value={filters.stationName}
+        value={filters.total}
         placeholder='Введите'
-        onChange={(val) => onChange('stationName', val)}
-      />
+        onChange={(val) => onChange('total', val)} */}
+      {/* /> */}
     </div>
   </form>
 );
