@@ -84,21 +84,6 @@
   pointer-events: none;
 }
 
-.span_date {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.span_duration {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  text-align: center;
-}
-
 .no_results {
   display: flex;
   align-items: center;
