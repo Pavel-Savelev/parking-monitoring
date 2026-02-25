@@ -5,6 +5,6 @@ export const mockStationData = stationData as IStationData[];
 // TODO переделать логику в виджеты и даже передачу данных апи
 export const StationsPage: React.FC = () => (
   <>
-    <StationsList data={mockStationData} />
+    <StationsList />
   </>
 );

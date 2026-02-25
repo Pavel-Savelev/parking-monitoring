@@ -77,8 +77,6 @@ export interface IEventStationData {
   events: IStationEvent[];
 }
 
-
-
 // API
 // EVENTS
 interface IZoneItem {
@@ -100,6 +98,25 @@ export interface IEvent {
   address: string;
   end_time: string;
   start_time: string;
+}
+
+// STATIONS
+
+export interface IStations {
+  address: string;
+  duration: IDuration;
+  id: string;
+  ip: string;
+  station_id: string;
+  zone_status: IZoneStatus;
+}
+
+interface IDuration {
+  [key: string]: string;
+}
+
+interface IZoneStatus {
+  [key: string]: string;
 }
 
 // PARKING_STATUS_BY_STATION_ID

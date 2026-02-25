@@ -1,4 +1,3 @@
-// TODO Поменять размер текста на коннекторах
 import { Monitor } from '../../widgets/station-info/ui/Monitor';
 import { Information } from '../../widgets/station-info/ui/Information';
 import { Connectors } from './ui/Connectors';
@@ -12,35 +11,35 @@ const anyData = [
     name: 'ESC',
     something: 'true',
     date: new Date(),
-    event: 'connector down'
+    eventId: 'cv_1771506765384780336'
   },
   {
     id: '11111',
     name: 'ESC-11',
     something: 'true',
     date: new Date(),
-    event: 'connector down'
+    eventId: 'cv_1771506787086002346'
   },
   {
     id: '123',
     name: 'ES-2C',
     something: 'true',
     date: new Date(),
-    event: 'connector down'
+    eventId: 'connector down'
   },
   {
     id: '1245',
     name: 'ESC-3',
     something: 'true',
     date: new Date(),
-    event: 'connector down'
+    eventId: 'connector down'
   },
   {
     id: '12455',
     name: 'ESC-4',
     something: 'true',
     date: new Date(),
-    event: 'connector down'
+    eventId: 'connector down'
   }
 ];
 
@@ -59,6 +58,7 @@ export const StationInfoPage: React.FC<IStationDataProps> = ({
     <Connectors data={connectors} />
     <Monitor />
     <Information data={mainInfo} />
+    {/* вызываем все ивенты (с видео) которые есть и передаем сюда как catalogVideo вместо anyData */}
     <VideoSection data={anyData} />
   </>
 );

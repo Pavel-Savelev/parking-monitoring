@@ -4,24 +4,29 @@ import { EventsTable } from './ui/EventTableUI';
 import { IEvent } from 'shared/types';
 import { useEvents } from '../../hooks/useEventsList';
 import mockData from '../../mockData/events-stations.json';
+import { useNavigate } from 'react-router-dom';
 
 export const EventsList = () => {
   const eventsData = useEvents();
+  const navigate = useNavigate();
 
-  // проверяем есть ли подключение к апи и если его нет то выводим мок данные
+  // проверяем есть ли подключение к API, и если его нет - выводим мок данные
   const data: IEvent[] = eventsData.events?.length
     ? (eventsData.events as IEvent[])
     : (mockData as IEvent[]);
 
-  console.log('Mock data:', mockData);
+  if (!eventsData) {
+    console.log('current data for events is MockData');
+  }
+  console.log(eventsData);
 
   const [filters, setFilters] = useState({
-    id: '', // фильтр по event.id
-    station_id: '', // фильтр по station_id
-    event_type: '', // фильтр по типу события
-    start_time: '', // фильтр по дате начала
-    end_time: '', // фильтр по дате окончания
-    address: '' // фильтр по адресу
+    id: '',
+    station_id: '',
+    event_type: '',
+    start_time: '',
+    end_time: '',
+    address: ''
   });
 
   const handleChange = (field: string, value: string) => {
@@ -68,6 +73,13 @@ export const EventsList = () => {
   );
 
   const handleNavigate = (id: string, eventId: string) => {
+    navigate(`/station/${id}`, {
+      state: {
+        openModal: true,
+        eventId: eventId,
+        scrollToElement: `video-${eventId}`
+      }
+    });
     console.log('Navigate to station:', id, 'event:', eventId);
   };
 

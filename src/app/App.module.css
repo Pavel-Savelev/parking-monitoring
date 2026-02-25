@@ -20,16 +20,14 @@
 }
 
 .main {
-  min-height: 100vh; /* вместо height */
-  
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center; /* центрирование по горизонтали */
+  align-items: center;
   
-  /* Контейнер для центрированного контента */
   & > * {
     width: 100%;
-    max-width: 1200px; /* максимальная ширина контента */
+    max-width: 1200px;
   }
 }
 

@@ -6,10 +6,11 @@ export function EventFormatType({ type }: IEventType): string {
   const types: Record<string, string> = {
     IMPACT: 'Повреждение',
     CV_EVENT: 'Событие',
-    CONNECTOR_STATE_CHANGE: 'Изменение коннектора',
+    // CONNECTOR_STATE_CHANGE: 'Изменение коннектора',
     STATION_STATE_UPDATE: 'Обновление станции',
     PARKING_STATUS: 'Статус парковки',
-    PARKING_VIOLATION: 'Нарушение: занятие места'
+    PARKING_VIOLATION: 'Нарушение: занятие места',
+    CONNECTOR_INCIDENT: 'Изменение коннектора'
   };
 
   return types[type] || type.replace(/_/g, ' ').toLowerCase();

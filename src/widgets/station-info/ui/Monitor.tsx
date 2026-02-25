@@ -6,20 +6,12 @@ interface MonitorProps {
 }
 
 export function Monitor({
-  streamUrl = 'http://192.168.21.208:5000/api/live-stream',
-  title = 'Camera Monitor'
-}: MonitorProps) {
+  streamUrl = 'http://192.168.21.224:5000/api/live-stream'
+}) {
   return (
-    <div className={styles.video}>
-      <iframe
-        src={streamUrl}
-        title={title}
-        width='100%'
-        height='100%'
-        frameBorder='0'
-        allowFullScreen
-        className={styles.stream}
-      />
+    <div className={styles.container}>
+      {/* Если API отдает поток изображений, img поймет это сам */}
+      <img src={streamUrl} className={styles.video} alt='Live Stream' />
     </div>
   );
 }

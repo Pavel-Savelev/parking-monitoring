@@ -1,9 +1,9 @@
-import { getAllEvents } from '../api/all-events/getEvents';
+import { getAllStations } from '../api/all-stations/getStations';
 import { useEffect, useState } from 'react';
-import { IEvent } from 'shared/types';
+import { IStations } from '../shared/types';
 
-export function useEvents() {
-  const [events, setEvents] = useState<IEvent[]>([]);
+export function useStations() {
+  const [stations, setStations] = useState<IStations[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const fetchEvents = async () => {
@@ -11,8 +11,8 @@ export function useEvents() {
     setError(null);
 
     try {
-      const data = await getAllEvents();
-      setEvents(data);
+      const data = await getAllStations();
+      setStations(data);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Ошибка загрузки');
     } finally {
@@ -25,7 +25,7 @@ export function useEvents() {
   }, []);
 
   return {
-    events,
+    stations,
     loading,
     error
   };
